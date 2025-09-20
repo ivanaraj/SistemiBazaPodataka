@@ -1,0 +1,32 @@
+Zadatak 6 - Baza podataka MMORPG
+Potrebno je projektovati relacionu bazu podataka koja će pamtiti informacije neophodne za održavanje
+MMORPG (massively multiplayer online role-playing game) sistema. Za svakog igrača koji učestvuje u igri
+se pamti jedinstveni identifikator, jedinstveni nadimak, lozinka, ime, prezime, pol i uzrast. Takođe, za
+svakog igrača se pamte i informacije o sesijama, vreme kada se je igrač povezao na server, koliko je dugo
+učestvovao u igri tokom te sesije kao i broj iskustvenih poena i zlata koje je prikupio u toj sesiji. Svaki igrač
+može da vodi samo jedan lik u igri koji pripada određenoj rasi (čovek, patuljak, vilenjak, ork ili demon). Za
+sve likove u igri pamti se stepen zamora, iskustvo, nivo zdravstvenog stanja i količina zlata. Za vilenjake i
+demone se pamti nivo energije koju mogu da upotrebe za spravljanje magija, za patuljke i orkove tip oružja
+za koje su specijalizovani a za ljude umešnost u skrivanju. Pored toga likovi mogu da pripadaju određenoj
+klasi (lopovi, čarobnjaci, borci, sveštenici, oklopnici ili strelci). Za lopove se pamti nivo buke koji prave I
+maksimalni nivo zamki koje mogu da uklone, začarobnjake spisak magija koje znaju, za borce da li se
+koriste štit I da li mogu da koriste oružje u obe uke, za sveštenike kojoj religiji pripadaju, tipove blagoslova
+koje pružaju i da li mogu da leče, za oklopnije maksimalna težina oklopa i za strelce da li koriste luk ili
+samostrel. U igri postoje timovi. Za svaki tim se pamti naziv, maksimalan i minimalan broj igrača koje tim
+može da ima, bonus poeni za koje donosi svojim pripadnicima i njihov plasman. Igrač u jednom trenutku
+može biti pripadnik samo jednog tima. Timovi se mogu boriti sa drugim timovia. Čuvaju se informacije o
+svakoj takvoj borbi: kada je održana, koji timovi su učestvovali, koji tim je pobedio I bonusu koji je
+pobednički tim dobio. U igri, takođe, postoje i staze za koje se igrači odlučuju da igraju. Igrači su na stazi
+indivudualno ili zajedno sa drugim članovima tima kome pripadaju. Pamti se koliko puta je koji igrač igrao
+određenu stazu i koliko je neprijatelja savladao tokom svakog igranja. Za pojedine staze mogu da se pamte
+ograničenja koja tiču rase ili klase likova koji moraju učestvovati da bi se staza prešla. Pojedine staze mogu
+biti pređene samo ukoliko igrači igraju u timu. Takođe, za svaki zadatak se pamti bonus u iskustvu koji
+donosi igraču po uspešnom završetku. Tokom izvršavanja zadatka igrač može naći i predmete ili oružje od
+značaja za nastavak igre. Postoje predmeti koji su ključni za dalji tok igre i za koje se pamti: naziv predmeta,
+opis predmeta i nadimci likova koji su u relaciji sa predmetom. Takođe postoje predmeti i oružja koji
+donose dodatne iskustvene poene igračima. Pri tome se pamti broj iskustvenih poena kao i rase koje mogu
+iskoristit taj predmet ili oružje. Tokom igre igrač može u prodavnici kupovati oklope ili oružja koja su od
+značaja za nastavak igre. I za oklope i za oružja se pamti naziv, opis i rase i klase koje mogu da ih koriste.
+Za oklope se dodatno pamti pamte poeni za odbranu a za oružja poeni za napad. Igrači mogu imati svoje
+pomoćnike koje kontroliše sam sistem. Pomoćnik postoji u sistemu samo ukoliko postoji igrač (lik) koji ih
+vodi. Za svakog pomoćnika se pamti ime, rasa, klasa i bonus u zaštiti koje daju svom liku.
