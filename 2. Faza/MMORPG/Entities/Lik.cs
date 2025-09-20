@@ -8,7 +8,7 @@ namespace MMORPG.Entities
 {
     public class Lik
     {
-        public virtual string Id { get; set; }
+        public virtual int Id { get; set; }
         public virtual int StepenZamora { get; set; }
         public virtual int Iskustvo { get; set; }
         public virtual int KolicinaZlata { get; set; }

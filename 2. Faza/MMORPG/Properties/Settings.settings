@@ -1,7 +1,14 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
-  <Profiles>
-    <Profile Name="(Default)" />
-  </Profiles>
-  <Settings />
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="MMORPG.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;USER ID=S18867;PASSWORD=sila;DATA SOURCE=gislab-oracle.elfak.ni.ac.rs:1521/SBP_PDB;TNS_ADMIN=C:\Users\Ivana\Oracle\network\admin&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Oracle.ManagedDataAccess.Client&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">USER ID=S18867;PASSWORD=sila;DATA SOURCE=gislab-oracle.elfak.ni.ac.rs:1521/SBP_PDB;TNS_ADMIN=C:\Users\Ivana\Oracle\network\admin</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

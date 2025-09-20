@@ -8,7 +8,7 @@ namespace MMORPG.Entities
 {
     public class Sesija
     {
-        public virtual string Id { get; set; }
+        public virtual int Id { get; set; }
         public virtual int? XpPoeni { get; set; }
         public virtual int? KolicinaZlata { get; set; }
         public virtual DateTime VremePocetka { get; set; }

@@ -18,7 +18,7 @@ namespace MMORPG.Entities
         public virtual IList<Rasa> ZahtevaneRase { get; set; } // N:M kroz zahteva_rasa
         public virtual IList<Klasa> ZahtevaneKlase { get; set; } // N:M kroz zahteva_klasa
 
-        public virtual IList<Igrac> Igraci { get; set; } 
+        public virtual IList<Igrao> Igraci { get; set; } 
 
         public Staza() {
             Timovi = new List<Tim>(); 
@@ -26,6 +26,7 @@ namespace MMORPG.Entities
             Predmeti = new List<Predmet>();
             ZahtevaneRase = new List<Rasa>();
             ZahtevaneKlase = new List<Klasa>();
+            Igraci = new List<Igrao>();
         }
     }
 }

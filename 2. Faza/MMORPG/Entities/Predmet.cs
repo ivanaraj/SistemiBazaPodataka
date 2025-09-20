@@ -8,10 +8,10 @@ namespace MMORPG.Entities
 {
     public class Predmet
     {
-        public virtual string Id { get; set; }
-        public virtual string Opis { get; set; }
+        public virtual int Id { get; set; }
         public virtual string Naziv { get; set; }
-        public virtual int XpBonus { get; set; }
+        public virtual string Opis { get; set; }
+        public virtual int? XpBonus { get; set; }
 
         public virtual IList<Staza> StazeKljucniPredmet { get; set; } // N:M kroz kljucni_za
         public virtual IList<Staza> StazePredmet { get; set; } // N:M kroz nalazi_se_na
