@@ -25,29 +25,34 @@ namespace MMORPG.Mapiranje
             HasMany(x => x.Pomocnici)
                 .KeyColumn("id_igraca")
                 .Inverse()
-                .Cascade.All();
+                .Cascade.AllDeleteOrphan()
+                .LazyLoad();
 
             HasMany(x => x.Sesije)
                 .KeyColumn("id_igraca")
+                .Cascade.AllDeleteOrphan()
                 .Inverse()
-                .Cascade.All();
+                .LazyLoad();
 
             HasMany(x => x.IgraoStaze)
                 .KeyColumn("id_igraca")
                 .Inverse()
-                .Cascade.All();
+                .Cascade.AllDeleteOrphan()
+                .LazyLoad();
 
             HasManyToMany(x => x.KljučniPredmeti)
                 .Table("koristi")
                 .ParentKeyColumn("id_igraca")
                 .ChildKeyColumn("id_kljucnog_predmeta")
-                .Cascade.All(); // igrac je vlasnik veze
+                .Cascade.AllDeleteOrphan()
+                .LazyLoad(); // igrac je vlasnik veze
 
             HasManyToMany(x => x.Opreme)
                 .Table("kupio")
                 .ParentKeyColumn("id_igraca")
                 .ChildKeyColumn("id_opreme")
-                .Cascade.All(); // igrac je vlasnik veze
+                .Cascade.AllDeleteOrphan()
+                .LazyLoad(); // igrac je vlasnik veze
         }
     }
 }

@@ -3,60 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\mapiranje\\igracmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:mapiranje\\igracmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\entities\\staza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:entities\\staza.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\dtomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:dtomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\entities\\igrac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:entities\\igrac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\entities\\igrao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:entities\\igrao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\forme\\dodajigraca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:forme\\dodajigraca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\entities\\borba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:entities\\borba.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\mapiranje\\sesijamap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:mapiranje\\sesijamap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\entities\\oprema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:entities\\oprema.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\entities\\sesija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:entities\\sesija.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\entities\\lik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:entities\\lik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\forme\\dodajlika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:forme\\dodajlika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\forme\\dodajlika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\forme\\dodajlika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:forme\\dodajlika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\forme\\izmeniigraca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:forme\\izmeniigraca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\forme\\dodajigraca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:forme\\dodajigraca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\forme\\izmeniigraca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:forme\\izmeniigraca.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\pocetnastrana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:pocetnastrana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\forme\\dodajlika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:forme\\dodajlika.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\entities\\tim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:entities\\tim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\pocetnastrana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:pocetnastrana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\datalayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:datalayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|c:\\users\\ivana\\desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\sistemibazapodataka\\2. faza\\mmorpg\\thememanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C370394B-1C18-4F6D-A6F2-884D1864F01F}|MMORPG.csproj|solutionrelative:thememanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -65,127 +73,165 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 214,
-          "SelectedChildIndex": 0,
+          "DockedWidth": 321,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DTOs.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\DTOs.cs",
-              "RelativeDocumentMoniker": "DTOs.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\DTOs.cs",
-              "RelativeToolTip": "DTOs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKUBAAA4AAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "SesijaMap.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Mapiranje\\SesijaMap.cs",
+              "RelativeDocumentMoniker": "Mapiranje\\SesijaMap.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Mapiranje\\SesijaMap.cs",
+              "RelativeToolTip": "Mapiranje\\SesijaMap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T23:54:59.467Z",
+              "WhenOpened": "2025-09-21T21:49:42.858Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "IgracMap.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Mapiranje\\IgracMap.cs",
+              "RelativeDocumentMoniker": "Mapiranje\\IgracMap.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Mapiranje\\IgracMap.cs",
+              "RelativeToolTip": "Mapiranje\\IgracMap.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwB8AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T23:46:50.618Z"
+              "WhenOpened": "2025-09-21T21:48:30.32Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DodajLika.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\DodajLika.cs",
-              "RelativeDocumentMoniker": "Forme\\DodajLika.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\DodajLika.cs",
-              "RelativeToolTip": "Forme\\DodajLika.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwB4AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "IzmeniIgraca.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\IzmeniIgraca.cs",
+              "RelativeDocumentMoniker": "Forme\\IzmeniIgraca.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\IzmeniIgraca.cs",
+              "RelativeToolTip": "Forme\\IzmeniIgraca.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADgAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T21:38:33.12Z",
+              "WhenOpened": "2025-09-21T20:51:32.018Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "IzmeniIgraca.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\IzmeniIgraca.cs",
+              "RelativeDocumentMoniker": "Forme\\IzmeniIgraca.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\IzmeniIgraca.cs [Design]",
+              "RelativeToolTip": "Forme\\IzmeniIgraca.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T20:41:50.684Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "DodajLika.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\DodajLika.cs",
               "RelativeDocumentMoniker": "Forme\\DodajLika.cs",
               "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\DodajLika.cs [Design]",
               "RelativeToolTip": "Forme\\DodajLika.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T20:59:08.249Z",
+              "WhenOpened": "2025-09-21T18:37:33.524Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DataLayer.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\DataLayer.cs",
-              "RelativeDocumentMoniker": "DataLayer.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\DataLayer.cs",
-              "RelativeToolTip": "DataLayer.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAYwCsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "DodajIgraca.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\DodajIgraca.cs",
+              "RelativeDocumentMoniker": "Forme\\DodajIgraca.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\DodajIgraca.cs [Design]",
+              "RelativeToolTip": "Forme\\DodajIgraca.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T18:43:08.382Z",
+              "WhenOpened": "2025-09-21T18:25:48.687Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T17:51:04.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "DocumentIndex": 9,
+              "Title": "PocetnaStrana.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\PocetnaStrana.cs",
+              "RelativeDocumentMoniker": "PocetnaStrana.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\PocetnaStrana.cs",
+              "RelativeToolTip": "PocetnaStrana.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T17:34:17.019Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-09-21T13:23:48.929Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Form1.cs",
-              "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Form1.cs",
-              "RelativeToolTip": "Form1.cs",
-              "ViewState": "AgIAALsAAAAAAAAAAAAEwNMAAAAaAAAAAAAAAA==",
+              "Title": "PocetnaStrana.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\PocetnaStrana.cs",
+              "RelativeDocumentMoniker": "PocetnaStrana.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\PocetnaStrana.cs [Design]",
+              "RelativeToolTip": "PocetnaStrana.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T18:47:28.796Z",
+              "WhenOpened": "2025-09-21T13:20:42.807Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ThemeManager.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\ThemeManager.cs",
+              "RelativeDocumentMoniker": "ThemeManager.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\ThemeManager.cs",
+              "RelativeToolTip": "ThemeManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T12:54:34.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DodajIgraca.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\DodajIgraca.cs",
+              "RelativeDocumentMoniker": "Forme\\DodajIgraca.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\DodajIgraca.cs",
+              "RelativeToolTip": "Forme\\DodajIgraca.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAYwKEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-21T18:26:22.971Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 186,
-          "SelectedChildIndex": 5,
+          "DockedWidth": 261,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Igrao.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Igrao.cs",
-              "RelativeDocumentMoniker": "Entities\\Igrao.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Igrao.cs",
-              "RelativeToolTip": "Entities\\Igrao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 12,
+              "Title": "Tim.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Tim.cs",
+              "RelativeDocumentMoniker": "Entities\\Tim.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Tim.cs",
+              "RelativeToolTip": "Entities\\Tim.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T21:41:19.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Borba.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Borba.cs",
-              "RelativeDocumentMoniker": "Entities\\Borba.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Borba.cs",
-              "RelativeToolTip": "Entities\\Borba.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-14T15:53:24.493Z",
+              "WhenOpened": "2025-09-21T20:31:41.189Z",
               "EditorCaption": ""
             },
             {
@@ -196,61 +242,48 @@
               "RelativeDocumentMoniker": "Entities\\Igrac.cs",
               "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Igrac.cs",
               "RelativeToolTip": "Entities\\Igrac.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswCgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T21:41:08.577Z",
+              "WhenOpened": "2025-09-21T19:02:32.372Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Oprema.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Oprema.cs",
-              "RelativeDocumentMoniker": "Entities\\Oprema.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Oprema.cs",
-              "RelativeToolTip": "Entities\\Oprema.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
+              "Title": "DodajLika.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\DodajLika.cs",
+              "RelativeDocumentMoniker": "Forme\\DodajLika.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Forme\\DodajLika.cs",
+              "RelativeToolTip": "Forme\\DodajLika.cs",
+              "ViewState": "AgIAAGMBAAAAAAAAAAAUwGkBAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T21:20:42.512Z",
+              "WhenOpened": "2025-09-21T18:45:11.523Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Sesija.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Sesija.cs",
-              "RelativeDocumentMoniker": "Entities\\Sesija.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Sesija.cs",
-              "RelativeToolTip": "Entities\\Sesija.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "DTOs.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\DTOs.cs",
+              "RelativeDocumentMoniker": "DTOs.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\DTOs.cs",
+              "RelativeToolTip": "DTOs.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T20:19:40.028Z",
+              "WhenOpened": "2025-09-20T20:41:12.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Staza.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Staza.cs",
-              "RelativeDocumentMoniker": "Entities\\Staza.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Staza.cs",
-              "RelativeToolTip": "Entities\\Staza.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAjAAAAAAAAAA==",
+              "Title": "DTOManager.cs",
+              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\DTOManager.cs",
+              "RelativeDocumentMoniker": "DTOManager.cs",
+              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\DTOManager.cs",
+              "RelativeToolTip": "DTOManager.cs",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAIwJMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-19T20:19:06.78Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Lik.cs",
-              "DocumentMoniker": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Lik.cs",
-              "RelativeDocumentMoniker": "Entities\\Lik.cs",
-              "ToolTip": "C:\\Users\\Ivana\\Desktop\\faxy\\3\\6. semestar\\sistemi baza podataka\\SistemiBazaPodataka\\2. Faza\\MMORPG\\Entities\\Lik.cs",
-              "RelativeToolTip": "Entities\\Lik.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-18T20:47:26.396Z",
+              "WhenOpened": "2025-09-20T20:32:18.336Z",
               "EditorCaption": ""
             }
           ]

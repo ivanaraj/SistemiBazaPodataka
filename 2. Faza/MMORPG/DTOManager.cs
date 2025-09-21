@@ -176,6 +176,24 @@ namespace MMORPG
 
             return timovi;
         }
+
+        public static TimPregled vratiTim(string Naziv)
+        {
+            TimPregled tp = new TimPregled();
+            try
+            {
+                ISession s = DataLayer.GetSession();
+                MMORPG.Entities.Tim t = s.Load<MMORPG.Entities.Tim>(Naziv);
+                tp = new TimPregled(t.Naziv, t.MaxIgraca, t.MinIgraca, t.BonusPoeni);
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.Message);
+            }
+            return tp;
+        }
+
         public static void sacuvajTim(TimBasic tim)
         {
             try
@@ -498,23 +516,36 @@ namespace MMORPG
             try
             {
                 ISession s = DataLayer.GetSession();
+
                 IEnumerable<Klasa> sveKlase = from o in s.Query<Klasa>()
                                              select o;
+
                 foreach (Klasa k in sveKlase)
                 {
-                    klase.Add(new KlasaPregled(k.Naziv, k.NivoBuke, k.MaxNivoZamki, k.Stit,
-                        k.OruzjeUObeRuke, k.Religija, k.Lecenje, k.MaxTezinaOklopa, k.LukSamostrel));
+                    //klase.Add(new KlasaPregled(k.Naziv, k.NivoBuke, k.MaxNivoZamki, k.Stit,
+                    //    k.OruzjeUObeRuke, k.Religija, k.Lecenje, k.MaxTezinaOklopa, k.LukSamostrel));
+
+
+                    KlasaPregled kp = new KlasaPregled(k.Naziv, k.NivoBuke, k.MaxNivoZamki, k.Stit,
+                                               k.OruzjeUObeRuke, k.Religija, k.Lecenje,
+                                               k.MaxTezinaOklopa, k.LukSamostrel);
 
                     
-                    foreach (var magija in k.Magije)
-                    {
-                        k.Magije.Add(magija);
-                    }
+                    kp.Magije = new List<string>(k.Magije);
+                    kp.Blagoslovi = new List<string>(k.Blagoslovi);
 
-                    foreach (var blagoslov in k.Blagoslovi)
-                    {
-                        k.Blagoslovi.Add(blagoslov);
-                    }
+                    klase.Add(kp);
+
+
+                    //foreach (var magija in k.Magije)
+                    //{
+                    //    k.Magije.Add(magija);
+                    //}
+
+                    //foreach (var blagoslov in k.Blagoslovi)
+                    //{
+                    //    k.Blagoslovi.Add(blagoslov);
+                    //}
                 }
                 s.Close();
             }
@@ -528,24 +559,30 @@ namespace MMORPG
         public static KlasaPregled vratiKlasu(string Naziv)
         {
             KlasaPregled kp = new KlasaPregled();
+
             try
             {
                 ISession s = DataLayer.GetSession();
+
                 MMORPG.Entities.Klasa k = s.Load<MMORPG.Entities.Klasa>(Naziv);
+
                 kp = new KlasaPregled(k.Naziv, k.NivoBuke, k.MaxNivoZamki, k.Stit,
                     k.OruzjeUObeRuke, k.Religija, k.Lecenje, k.MaxTezinaOklopa, k.LukSamostrel);
 
-                
-                foreach (var magija in k.Magije)
-                {
-                    kp.Magije.Add(magija);
-                }
 
-                
-                foreach (var blagoslov in k.Blagoslovi)
-                {
-                    kp.Blagoslovi.Add(blagoslov);
-                }
+                kp.Magije = new List<string>(k.Magije);
+                kp.Blagoslovi = new List<string>(k.Blagoslovi);
+
+                //foreach (var magija in k.Magije)
+                //{
+                //    kp.Magije.Add(magija);
+                //}
+
+
+                //foreach (var blagoslov in k.Blagoslovi)
+                //{
+                //    kp.Blagoslovi.Add(blagoslov);
+                //}
 
                 s.Close();
             }
@@ -554,6 +591,54 @@ namespace MMORPG
                 MessageBox.Show(ec.Message);
             }
             return kp;
+        }
+
+        public static List<string> vratiSveMagije()
+        {
+            List<string> magije = new List<string>();
+
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IEnumerable<string> sveMagije = from o in s.Query<Klasa>()
+                                               from m in o.Magije
+                                               select m;
+
+                magije = sveMagije.Distinct().ToList();
+
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.Message);
+            }
+
+            return magije;
+        }
+
+        public static List<string> vratiSveBlagoslove()
+        {
+            List<string> blagoslovi = new List<string>();
+
+            try
+            {
+                ISession s = DataLayer.GetSession();
+
+                IEnumerable<string> sviBlagoslovi = from o in s.Query<Klasa>()
+                                                  from b in o.Blagoslovi
+                                                  select b;
+
+                blagoslovi = sviBlagoslovi.Distinct().ToList();
+
+                s.Close();
+            }
+            catch (Exception ec)
+            {
+                MessageBox.Show(ec.Message);
+            }
+
+            return blagoslovi;
         }
 
         #endregion
@@ -571,8 +656,8 @@ namespace MMORPG
 
                 foreach (Lik i in sviLikovi)
                 {
-                    likovi.Add(new LikPregled(i.Id ,i.StepenZamora, i.Iskustvo, i.KolicinaZlata, i.NivoZdravstvenogStanja,
-                        i.Rasa, i.Klasa));
+                    likovi.Add(new LikPregled(i.Id ,i.StepenZamora, i.Iskustvo,
+                        i.KolicinaZlata, i.NivoZdravstvenogStanja, i.Rasa, i.Klasa));
                 }
 
                 s.Close();

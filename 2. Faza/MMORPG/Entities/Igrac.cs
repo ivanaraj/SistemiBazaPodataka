@@ -13,7 +13,7 @@ namespace MMORPG.Entities
         public virtual string Lozinka { get; set; }
         public virtual string Ime { get; set; }
         public virtual string Prezime { get; set; }
-        public virtual string Pol { get; set; }
+        public virtual char Pol { get; set; }
         public virtual int? Uzrast { get; set; }
 
         public virtual Tim Tim { get; set; }        // FK naziv_tima

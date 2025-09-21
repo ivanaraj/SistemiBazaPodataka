@@ -95,3 +95,6 @@ C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodat
 C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.csproj.Up2Date
 C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.exe
 C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.pdb
+C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.PocetnaStrana.resources
+C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.Forme.DodajIgraca.resources
+C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.Forme.IzmeniIgraca.resources

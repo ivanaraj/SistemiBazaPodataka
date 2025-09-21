@@ -50,7 +50,7 @@ namespace MMORPG
                 i.Lozinka = "mixaaa";
                 i.Ime = "Mihajlo";
                 i.Prezime = "Ljubisavljevic";
-                i.Pol = "M";
+                i.Pol = 'M';
                 i.Uzrast = 22;
                 //Dodaje se u bazu
                 s.Save(i);
@@ -130,7 +130,7 @@ namespace MMORPG
                     Lozinka = "jeka2003",
                     Ime = "Jelena",
                     Prezime = "Djoric",
-                    Pol = "Z",
+                    Pol = 'Z',
                     Uzrast = 27
                 };
 
@@ -140,7 +140,7 @@ namespace MMORPG
                     Lozinka = "ina1307",
                     Ime = "Irina",
                     Prezime = "Popovic",
-                    Pol = "Z",
+                    Pol = 'Z',
                     Uzrast = 25
                 };
 

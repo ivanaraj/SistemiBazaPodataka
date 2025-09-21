@@ -37,7 +37,7 @@ namespace MMORPG
         public string Lozinka;
         public string Ime;
         public string Prezime;
-        public string Pol;
+        public char Pol;
         public int? Uzrast;
         public Tim Tim;
         public Lik Lik;
@@ -58,7 +58,7 @@ namespace MMORPG
             IgraoStaze = new List<Igrao>();
         }
         public IgracBasic(int id, string ime, string prezime, string nadimak, 
-            string lozinka, string pol, int? uzrast, Tim tim, Lik lik)
+            string lozinka, char pol, int? uzrast, Tim tim, Lik lik)
         {
             this.Id = id;
             this.Nadimak = nadimak;

@@ -33,6 +33,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ikonica.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
       <HintPath>packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
@@ -132,11 +135,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajIgraca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajIgraca.Designer.cs">
+      <DependentUpon>DodajIgraca.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajLika.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\DodajLika.Designer.cs">
       <DependentUpon>DodajLika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniIgraca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniIgraca.Designer.cs">
+      <DependentUpon>IzmeniIgraca.cs</DependentUpon>
     </Compile>
     <Compile Include="Mapiranje\BorbaMap.cs" />
     <Compile Include="Mapiranje\IgracMap.cs" />
@@ -151,13 +166,29 @@
     <Compile Include="Mapiranje\StazaMap.cs" />
     <Compile Include="Mapiranje\TimMap.cs" />
     <Compile Include="Mapiranje\UcestvovaoUMap.cs" />
+    <Compile Include="PocetnaStrana.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PocetnaStrana.Designer.cs">
+      <DependentUpon>PocetnaStrana.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThemeManager.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajIgraca.resx">
+      <DependentUpon>DodajIgraca.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajLika.resx">
       <DependentUpon>DodajLika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniIgraca.resx">
+      <DependentUpon>IzmeniIgraca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PocetnaStrana.resx">
+      <DependentUpon>PocetnaStrana.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -167,6 +198,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -199,6 +231,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="ikonica.ico" />
+    <Content Include="Resources\ikonica.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\mmorpg.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
