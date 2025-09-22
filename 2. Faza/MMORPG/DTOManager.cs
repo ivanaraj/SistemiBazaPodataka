@@ -50,7 +50,7 @@ namespace MMORPG
 
                 MMORPG.Entities.Igrac o = s.Load<MMORPG.Entities.Igrac>(id);
                 igrac = new IgracBasic(o.Id, o.Nadimak, o.Lozinka, o.Ime, o.Prezime, 
-                    o.Pol, o.Uzrast, o.Tim, o.Lik);
+                    o.Pol, o.Uzrast, o.Tim);
 
                 s.Close();
             }
@@ -61,40 +61,44 @@ namespace MMORPG
 
             return igrac;
         }
-        public static IgracBasic azurirajIgraca(IgracBasic p, string nazivTima, int idLika)
+
+
+        public static Igrac azurirajIgraca(int idIgraca, string nazivTima,
+            string ime, string prezime, string lozinka, string nadimak,
+            char pol, int uzrast
+        )
         {
             try
             {
                 ISession s = DataLayer.GetSession();
+                MMORPG.Entities.Igrac o = s.Load<MMORPG.Entities.Igrac>(idIgraca);
 
-                MMORPG.Entities.Igrac o = s.Load<MMORPG.Entities.Igrac>(p.Id);
 
                 Tim t1 = s.Load<MMORPG.Entities.Tim>(nazivTima);
-                Lik l1 = s.Load<MMORPG.Entities.Lik>(idLika);
 
-                o.Ime = p.Ime;
-                o.Prezime = p.Prezime;
-                o.Lozinka = p.Lozinka;
-                o.Nadimak = p.Nadimak;
-                o.Pol = p.Pol;
-                o.Uzrast = p.Uzrast;
+                o.Ime = (ime == "" ? o.Ime : ime);
+                o.Prezime = (prezime == "" ? o.Prezime : prezime);
+                o.Lozinka = (lozinka == "" ? o.Lozinka : lozinka);
+                o.Nadimak = (nadimak == "" ? o.Nadimak : nadimak);
+                o.Pol = pol;
+                o.Uzrast = (uzrast == 0 ? o.Uzrast : uzrast);
                 o.Tim = t1;
-                o.Lik = l1;
 
                 s.Update(o);
                 s.Flush();
 
                 s.Close();
+                return o;
             }
             catch (Exception ec)
             {
                 MessageBox.Show(ec.Message);
+                return null;
             }
 
-            return p;
         }
 
-        public static void sacuvajIgraca(IgracBasic igrac, string nazivTima, int idLika)
+        public static void sacuvajIgraca(IgracBasic igrac, string nazivTima)
         {
             try
             {
@@ -103,7 +107,6 @@ namespace MMORPG
                 MMORPG.Entities.Igrac i = new MMORPG.Entities.Igrac();
 
                 Tim t1 = s.Load<MMORPG.Entities.Tim>(nazivTima);
-                Lik l1 = s.Load<MMORPG.Entities.Lik>(idLika);
 
                 i.Ime = igrac.Ime;
                 i.Prezime = igrac.Prezime;
@@ -112,7 +115,6 @@ namespace MMORPG
                 i.Uzrast = igrac.Uzrast;
                 i.Lozinka = igrac.Lozinka;
                 i.Tim = t1;
-                i.Lik = l1;
 
 
                 s.Save(i);
@@ -657,7 +659,7 @@ namespace MMORPG
                 foreach (Lik i in sviLikovi)
                 {
                     likovi.Add(new LikPregled(i.Id ,i.StepenZamora, i.Iskustvo,
-                        i.KolicinaZlata, i.NivoZdravstvenogStanja, i.Rasa, i.Klasa));
+                        i.KolicinaZlata, i.NivoZdravstvenogStanja, i.Rasa, i.Klasa, i.Igrac));
                 }
 
                 s.Close();
@@ -671,7 +673,7 @@ namespace MMORPG
             return likovi;
         }
 
-        public static void sacuvajLika(LikBasic lik, string nazivRase, string nazivKlase)
+        public static void sacuvajLika(LikBasic lik, string nazivRase, string nazivKlase, int idIgraca)
         {
             try
             {
@@ -681,6 +683,7 @@ namespace MMORPG
 
                 Rasa r1 = s.Load<MMORPG.Entities.Rasa>(nazivRase);
                 Klasa k1 = s.Load<MMORPG.Entities.Klasa>(nazivKlase);
+                Igrac igrac = s.Load<MMORPG.Entities.Igrac>(idIgraca);
 
 
                 l.StepenZamora = lik.StepenZamora;
@@ -689,6 +692,7 @@ namespace MMORPG
                 l.NivoZdravstvenogStanja = lik.NivoZdravstvenogStanja;
                 l.Rasa = r1;
                 l.Klasa = k1;
+                l.Igrac = igrac;
 
                 s.Save(l);
                 s.Flush();

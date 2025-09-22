@@ -73,9 +73,10 @@ namespace MMORPG
                 ISession s = DataLayer.GetSession();
 
                 //Ucitavaju se podaci o igracu za zadatim brojem
-                MMORPG.Entities.Igrac i = s.Load<MMORPG.Entities.Igrac>(100001);
-                MessageBox.Show(i.Nadimak);
-                MessageBox.Show(i.Lik.Rasa.Naziv);  //Pristupa se njegovom liku i rasi
+                MMORPG.Entities.Lik l = s.Load<MMORPG.Entities.Lik>(100001);
+                MessageBox.Show(l.Rasa.Naziv);
+                MessageBox.Show(l.Klasa.Naziv);
+                MessageBox.Show(l.Igrac.Nadimak);  
 
                 s.Close();
             }

@@ -36,7 +36,7 @@
             // 
             // btnIgraci
             // 
-            this.btnIgraci.Location = new System.Drawing.Point(40, 319);
+            this.btnIgraci.Location = new System.Drawing.Point(40, 280);
             this.btnIgraci.Name = "btnIgraci";
             this.btnIgraci.Size = new System.Drawing.Size(103, 38);
             this.btnIgraci.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // btnStaze
             // 
-            this.btnStaze.Location = new System.Drawing.Point(40, 377);
+            this.btnStaze.Location = new System.Drawing.Point(40, 337);
             this.btnStaze.Name = "btnStaze";
             this.btnStaze.Size = new System.Drawing.Size(103, 38);
             this.btnStaze.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             // btnOprema
             // 
-            this.btnOprema.Location = new System.Drawing.Point(40, 435);
+            this.btnOprema.Location = new System.Drawing.Point(40, 398);
             this.btnOprema.Name = "btnOprema";
             this.btnOprema.Size = new System.Drawing.Size(103, 36);
             this.btnOprema.TabIndex = 2;
@@ -68,7 +68,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::MMORPG.Properties.Resources.mmorpg;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(363, 524);
+            this.ClientSize = new System.Drawing.Size(363, 534);
             this.Controls.Add(this.btnOprema);
             this.Controls.Add(this.btnStaze);
             this.Controls.Add(this.btnIgraci);

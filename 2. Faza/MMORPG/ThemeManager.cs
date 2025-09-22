@@ -11,8 +11,8 @@ namespace MMORPG
     public class ThemeManager
     {
         // Paleta boja (možeš lako menjati po želji)
-        private static Color PrimaryBackground = Color.FromArgb(61, 31, 13);   // tamno siva
-        private static Color SecondaryBackground = Color.FromArgb(150, 60, 8); // još svetlija siva
+        private static Color PrimaryBackground = Color.FromArgb(61, 31, 13);   
+        private static Color SecondaryBackground = Color.FromArgb(150, 60, 8); 
         private static Color AccentColor = Color.Goldenrod;                    // zlatna
         private static Color TextColor = Color.Gainsboro;                      // sivo-bela
         private static Color DisabledTextColor = Color.DimGray;

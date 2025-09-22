@@ -68,6 +68,7 @@ namespace MMORPG.Forme
             popuniPodacima();
             PopuniComboBoxRase();
             PopuniComboBoxKlase();
+            PopuniComboBoxIgraci();
             popuniMagije();
             popuniBlagoslove();
 
@@ -112,6 +113,19 @@ namespace MMORPG.Forme
             foreach (KlasaPregled k in sveKlase)
             {
                 comboBoxKlasa.Items.Add(k.Naziv);
+            }
+
+        }
+
+        private void PopuniComboBoxIgraci()
+        {
+            comboBoxIgrac.Items.Clear();
+
+            List<IgracPregled> sviIgraci = DTOManager.vratiSveIgrace();
+
+            foreach (IgracPregled i in sviIgraci)
+            {
+                comboBoxIgrac.Items.Add(i.Nadimak);
             }
 
         }
@@ -311,6 +325,17 @@ namespace MMORPG.Forme
                 return null;
             }
 
+            if (comboBoxIgrac.SelectedItem != null)
+            {
+                IgracBasic i = DTOManager.vratiIgraca(Int32.Parse(comboBoxIgrac.SelectedItem.ToString()));
+                lik.Igrac = new IgracBasic(i.Id, i.Ime, i.Prezime, i.Nadimak, i.Lozinka, i.Pol, i.Uzrast, i.Tim);
+            }
+            else
+            {
+                MessageBox.Show("Morate izabrati igraca!");
+                return null;
+            }
+
             return lik;
         }
 
@@ -352,7 +377,8 @@ namespace MMORPG.Forme
                 LikBasic noviLik = NapuniLikIzForme();
                 string nazivRase = comboBoxRasa.SelectedItem.ToString();
                 string nazivKlase = comboBoxKlasa.SelectedItem.ToString();
-                DTOManager.sacuvajLika(noviLik, nazivRase, nazivKlase);
+                int idIgraca = Int32.Parse(comboBoxIgrac.SelectedItem.ToString());
+                DTOManager.sacuvajLika(noviLik, nazivRase, nazivKlase, idIgraca);
                 MessageBox.Show("Lik je uspesno sacuvan!");
 
                 popuniPodacima();

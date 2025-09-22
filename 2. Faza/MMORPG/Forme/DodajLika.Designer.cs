@@ -94,6 +94,8 @@
             this.columnKlasa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnDodajLika = new System.Windows.Forms.Button();
             this.btnObrisiLika = new System.Windows.Forms.Button();
+            this.labIgrac = new System.Windows.Forms.Label();
+            this.comboBoxIgrac = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.lIKBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numStepenZamora)).BeginInit();
@@ -132,7 +134,7 @@
             // labelStepenZamora
             // 
             this.labelStepenZamora.AutoSize = true;
-            this.labelStepenZamora.Location = new System.Drawing.Point(26, 39);
+            this.labelStepenZamora.Location = new System.Drawing.Point(17, 32);
             this.labelStepenZamora.Name = "labelStepenZamora";
             this.labelStepenZamora.Size = new System.Drawing.Size(81, 13);
             this.labelStepenZamora.TabIndex = 1;
@@ -142,7 +144,7 @@
             // labelIskustvo
             // 
             this.labelIskustvo.AutoSize = true;
-            this.labelIskustvo.Location = new System.Drawing.Point(26, 69);
+            this.labelIskustvo.Location = new System.Drawing.Point(17, 60);
             this.labelIskustvo.Name = "labelIskustvo";
             this.labelIskustvo.Size = new System.Drawing.Size(50, 13);
             this.labelIskustvo.TabIndex = 2;
@@ -151,7 +153,7 @@
             // labelKolicinaZlata
             // 
             this.labelKolicinaZlata.AutoSize = true;
-            this.labelKolicinaZlata.Location = new System.Drawing.Point(26, 97);
+            this.labelKolicinaZlata.Location = new System.Drawing.Point(17, 90);
             this.labelKolicinaZlata.Name = "labelKolicinaZlata";
             this.labelKolicinaZlata.Size = new System.Drawing.Size(72, 13);
             this.labelKolicinaZlata.TabIndex = 3;
@@ -160,7 +162,7 @@
             // labelNivoZdravstvenogStanja
             // 
             this.labelNivoZdravstvenogStanja.AutoSize = true;
-            this.labelNivoZdravstvenogStanja.Location = new System.Drawing.Point(26, 141);
+            this.labelNivoZdravstvenogStanja.Location = new System.Drawing.Point(17, 126);
             this.labelNivoZdravstvenogStanja.Name = "labelNivoZdravstvenogStanja";
             this.labelNivoZdravstvenogStanja.Size = new System.Drawing.Size(130, 13);
             this.labelNivoZdravstvenogStanja.TabIndex = 4;
@@ -168,30 +170,30 @@
             // 
             // numStepenZamora
             // 
-            this.numStepenZamora.Location = new System.Drawing.Point(180, 32);
+            this.numStepenZamora.Location = new System.Drawing.Point(180, 25);
             this.numStepenZamora.Name = "numStepenZamora";
-            this.numStepenZamora.Size = new System.Drawing.Size(64, 20);
+            this.numStepenZamora.Size = new System.Drawing.Size(86, 20);
             this.numStepenZamora.TabIndex = 5;
             // 
             // numIskustvo
             // 
-            this.numIskustvo.Location = new System.Drawing.Point(180, 65);
+            this.numIskustvo.Location = new System.Drawing.Point(180, 53);
             this.numIskustvo.Name = "numIskustvo";
-            this.numIskustvo.Size = new System.Drawing.Size(64, 20);
+            this.numIskustvo.Size = new System.Drawing.Size(86, 20);
             this.numIskustvo.TabIndex = 6;
             // 
             // numKolicinaZlata
             // 
-            this.numKolicinaZlata.Location = new System.Drawing.Point(180, 92);
+            this.numKolicinaZlata.Location = new System.Drawing.Point(180, 83);
             this.numKolicinaZlata.Name = "numKolicinaZlata";
-            this.numKolicinaZlata.Size = new System.Drawing.Size(64, 20);
+            this.numKolicinaZlata.Size = new System.Drawing.Size(86, 20);
             this.numKolicinaZlata.TabIndex = 7;
             // 
             // numNivoZS
             // 
-            this.numNivoZS.Location = new System.Drawing.Point(180, 134);
+            this.numNivoZS.Location = new System.Drawing.Point(180, 119);
             this.numNivoZS.Name = "numNivoZS";
-            this.numNivoZS.Size = new System.Drawing.Size(64, 20);
+            this.numNivoZS.Size = new System.Drawing.Size(86, 20);
             this.numNivoZS.TabIndex = 8;
             // 
             // groupBoxRasa
@@ -303,7 +305,7 @@
             this.groupBoxKlasa.Controls.Add(this.groupBoxLopov);
             this.groupBoxKlasa.Controls.Add(this.comboBoxKlasa);
             this.groupBoxKlasa.Controls.Add(this.labKlasa);
-            this.groupBoxKlasa.Location = new System.Drawing.Point(12, 190);
+            this.groupBoxKlasa.Location = new System.Drawing.Point(12, 202);
             this.groupBoxKlasa.Name = "groupBoxKlasa";
             this.groupBoxKlasa.Size = new System.Drawing.Size(1409, 141);
             this.groupBoxKlasa.TabIndex = 10;
@@ -635,7 +637,7 @@
             this.likovi.FullRowSelect = true;
             this.likovi.GridLines = true;
             this.likovi.HideSelection = false;
-            this.likovi.Location = new System.Drawing.Point(753, 349);
+            this.likovi.Location = new System.Drawing.Point(789, 349);
             this.likovi.Name = "likovi";
             this.likovi.Size = new System.Drawing.Size(553, 202);
             this.likovi.TabIndex = 11;
@@ -696,11 +698,30 @@
             this.btnObrisiLika.UseVisualStyleBackColor = true;
             this.btnObrisiLika.Click += new System.EventHandler(this.btnObrisiLika_Click);
             // 
+            // labIgrac
+            // 
+            this.labIgrac.AutoSize = true;
+            this.labIgrac.Location = new System.Drawing.Point(17, 161);
+            this.labIgrac.Name = "labIgrac";
+            this.labIgrac.Size = new System.Drawing.Size(34, 13);
+            this.labIgrac.TabIndex = 14;
+            this.labIgrac.Text = "Igrac:";
+            // 
+            // comboBoxIgrac
+            // 
+            this.comboBoxIgrac.FormattingEnabled = true;
+            this.comboBoxIgrac.Location = new System.Drawing.Point(180, 158);
+            this.comboBoxIgrac.Name = "comboBoxIgrac";
+            this.comboBoxIgrac.Size = new System.Drawing.Size(86, 21);
+            this.comboBoxIgrac.TabIndex = 15;
+            // 
             // DodajLika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1431, 590);
+            this.Controls.Add(this.comboBoxIgrac);
+            this.Controls.Add(this.labIgrac);
             this.Controls.Add(this.btnObrisiLika);
             this.Controls.Add(this.btnDodajLika);
             this.Controls.Add(this.likovi);
@@ -816,5 +837,7 @@
         private System.Windows.Forms.CheckedListBox checkedListBoxBlagoslovi;
         private System.Windows.Forms.Button btnObrisiLika;
         private System.Windows.Forms.GroupBox groupBoxStit;
+        private System.Windows.Forms.Label labIgrac;
+        private System.Windows.Forms.ComboBox comboBoxIgrac;
     }
 }

@@ -73,8 +73,7 @@ CREATE TABLE igrac(
     prezime VARCHAR2(20 CHAR),
     pol VARCHAR2(1 CHAR),
     uzrast NUMBER(2, 0),
-    naziv_tima VARCHAR2(10 CHAR),
-    id_lika NUMBER(6, 0)
+    naziv_tima VARCHAR2(10 CHAR)
 );
 CREATE UNIQUE INDEX igrac_pk ON igrac(id);
 CREATE UNIQUE INDEX igrac_nadimak ON igrac(nadimak);
@@ -105,7 +104,8 @@ CREATE TABLE lik(
     kolicina_zlata INTEGER NOT NULL,
     nivo_zdravstvenog_stanja INTEGER NOT NULL,
     naziv_rase VARCHAR2(15 CHAR),
-    naziv_klase VARCHAR2(15 CHAR)
+    naziv_klase VARCHAR2(15 CHAR),
+    id_igraca NUMBER(6, 0)
 );
 CREATE UNIQUE INDEX lik_pk ON lik(id);
 ALTER TABLE lik ADD CONSTRAINT lik_pk PRIMARY KEY(id) ENABLE;
@@ -358,19 +358,19 @@ ALTER TABLE svestenik_blagoslov ADD CONSTRAINT svestenik_blagoslov_PK PRIMARY KE
 --CONTRAINTS FOR TABLE IGRAC
 ----------------------------------
 ALTER TABLE igrac ADD CONSTRAINT igrac_pol_chk CHECK (pol IN ('M', 'Z')) ENABLE;
-ALTER TABLE igrac ADD CONSTRAINT naziv_tima_FK FOREIGN KEY (naziv_tima) REFERENCES tim(naziv) ENABLE;
-ALTER TABLE igrac ADD CONSTRAINT id_lika_FK FOREIGN KEY (id_lika) REFERENCES lik(id) ENABLE;
+ALTER TABLE igrac ADD CONSTRAINT naziv_tima_FK FOREIGN KEY (naziv_tima) REFERENCES tim(naziv) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE SESIJA
 ----------------------------------
-ALTER TABLE sesija ADD CONSTRAINT id_igraca_FK FOREIGN KEY (id_igraca) REFERENCES igrac(id) ENABLE;
+ALTER TABLE sesija ADD CONSTRAINT id_igraca_FK FOREIGN KEY (id_igraca) REFERENCES igrac(id) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE LIK
 ----------------------------------
-ALTER TABLE lik ADD CONSTRAINT naziv_rase_FK FOREIGN KEY (naziv_rase) REFERENCES rasa(naziv) ENABLE;
-ALTER TABLE lik ADD CONSTRAINT naziv_klase_FK FOREIGN KEY (naziv_klase) REFERENCES klasa(naziv) ENABLE;
+ALTER TABLE lik ADD CONSTRAINT naziv_rase_FK FOREIGN KEY (naziv_rase) REFERENCES rasa(naziv) ON DELETE CASCADE;
+ALTER TABLE lik ADD CONSTRAINT naziv_klase_FK FOREIGN KEY (naziv_klase) REFERENCES klasa(naziv) ON DELETE CASCADE;
+ALTER TABLE lik ADD CONSTRAINT lik_id_igraca_FK FOREIGN KEY (id_igraca) REFERENCES igrac(id) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE STAZA
@@ -380,9 +380,9 @@ ALTER TABLE staza ADD CONSTRAINT tip_staze_chk CHECK (tip_staze IN(0,1)) ENABLE;
 ----------------------------------
 --CONTRAINTS FOR TABLE POMOCNIK
 ----------------------------------
-ALTER TABLE pomocnik ADD CONSTRAINT pomocnik_igrac_FK FOREIGN KEY (id_igraca) REFERENCES igrac(id) ENABLE;
-ALTER TABLE pomocnik ADD CONSTRAINT pomocnik_rasa_FK FOREIGN KEY (naziv_rase) REFERENCES rasa(naziv) ENABLE;
-ALTER TABLE pomocnik ADD CONSTRAINT pomocnik_klasa_FK FOREIGN KEY (naziv_klase) REFERENCES klasa(naziv) ENABLE;
+ALTER TABLE pomocnik ADD CONSTRAINT pomocnik_igrac_FK FOREIGN KEY (id_igraca) REFERENCES igrac(id) ON DELETE CASCADE;
+ALTER TABLE pomocnik ADD CONSTRAINT pomocnik_rasa_FK FOREIGN KEY (naziv_rase) REFERENCES rasa(naziv) ON DELETE CASCADE;
+ALTER TABLE pomocnik ADD CONSTRAINT pomocnik_klasa_FK FOREIGN KEY (naziv_klase) REFERENCES klasa(naziv) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE RASA
@@ -400,85 +400,85 @@ ALTER TABLE klasa ADD CONSTRAINT   luk_samostrel CHECK (luk_samostrel IN(0,1)) E
 ----------------------------------
 --CONTRAINTS FOR TABLE UCESTVOVAO_U
 ----------------------------------
-ALTER TABLE UCESTVOVAO_U ADD CONSTRAINT ucestvovao_tim_FK FOREIGN KEY(naziv_tima) REFERENCES tim(naziv) ENABLE;
-ALTER TABLE UCESTVOVAO_U ADD CONSTRAINT ucestvovao_u_borbi_FK FOREIGN KEY(id_borbe) REFERENCES borba(id) ENABLE;
+ALTER TABLE UCESTVOVAO_U ADD CONSTRAINT ucestvovao_tim_FK FOREIGN KEY(naziv_tima) REFERENCES tim(naziv) ON DELETE CASCADE;
+ALTER TABLE UCESTVOVAO_U ADD CONSTRAINT ucestvovao_u_borbi_FK FOREIGN KEY(id_borbe) REFERENCES borba(id) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE IGRAO
 ----------------------------------
-ALTER TABLE IGRAO ADD CONSTRAINT igrao_igrac_FK FOREIGN KEY(id_igraca) REFERENCES igrac(id) ENABLE;
-ALTER TABLE IGRAO ADD CONSTRAINT igrao_na_stazi_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ENABLE;
+ALTER TABLE IGRAO ADD CONSTRAINT igrao_igrac_FK FOREIGN KEY(id_igraca) REFERENCES igrac(id) ON DELETE CASCADE;
+ALTER TABLE IGRAO ADD CONSTRAINT igrao_na_stazi_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE IGRAO_TIM
 ----------------------------------
-ALTER TABLE IGRAO_TIM ADD CONSTRAINT igrao_tim_FK FOREIGN KEY(naziv_tima) REFERENCES tim(naziv) ENABLE;
-ALTER TABLE IGRAO_TIM ADD CONSTRAINT igrao_tim_na_stazi_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ENABLE;
+ALTER TABLE IGRAO_TIM ADD CONSTRAINT igrao_tim_FK FOREIGN KEY(naziv_tima) REFERENCES tim(naziv) ON DELETE CASCADE;
+ALTER TABLE IGRAO_TIM ADD CONSTRAINT igrao_tim_na_stazi_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE KUPIO
 ----------------------------------
-ALTER TABLE KUPIO ADD CONSTRAINT igrac_kupio_FK FOREIGN KEY(id_igraca) REFERENCES igrac(id) ENABLE;
-ALTER TABLE KUPIO ADD CONSTRAINT igrac_kupio_opremu_FK FOREIGN KEY(id_opreme) REFERENCES oprema(id) ENABLE;
+ALTER TABLE KUPIO ADD CONSTRAINT igrac_kupio_FK FOREIGN KEY(id_igraca) REFERENCES igrac(id) ON DELETE CASCADE;
+ALTER TABLE KUPIO ADD CONSTRAINT igrac_kupio_opremu_FK FOREIGN KEY(id_opreme) REFERENCES oprema(id) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE NALAZI_SE_NA
 ----------------------------------
-ALTER TABLE NALAZI_SE_NA ADD CONSTRAINT predmet_se_nalazi_FK FOREIGN KEY(id_predmeta) REFERENCES predmet(id) ENABLE;
-ALTER TABLE NALAZI_SE_NA ADD CONSTRAINT nalazi_se_na_stazi_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ENABLE;
+ALTER TABLE NALAZI_SE_NA ADD CONSTRAINT predmet_se_nalazi_FK FOREIGN KEY(id_predmeta) REFERENCES predmet(id) ON DELETE CASCADE;
+ALTER TABLE NALAZI_SE_NA ADD CONSTRAINT nalazi_se_na_stazi_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE ZAHTEVA_RASU
 ----------------------------------
-ALTER TABLE ZAHTEVA_RASU ADD CONSTRAINT zahtevana_na_stazi_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ENABLE;
-ALTER TABLE ZAHTEVA_RASU ADD CONSTRAINT zahtevana_rasa_FK FOREIGN KEY(naziv_rase) REFERENCES rasa(naziv) ENABLE;
+ALTER TABLE ZAHTEVA_RASU ADD CONSTRAINT zahtevana_na_stazi_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ON DELETE CASCADE;
+ALTER TABLE ZAHTEVA_RASU ADD CONSTRAINT zahtevana_rasa_FK FOREIGN KEY(naziv_rase) REFERENCES rasa(naziv) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE ZAHTEVA_KLASU
 ----------------------------------
-ALTER TABLE ZAHTEVA_KLASU ADD CONSTRAINT zahtevana_klasa_na_stazi_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ENABLE;
-ALTER TABLE ZAHTEVA_KLASU ADD CONSTRAINT zahtevana_klasa_FK FOREIGN KEY(naziv_klase) REFERENCES klasa(naziv) ENABLE;
+ALTER TABLE ZAHTEVA_KLASU ADD CONSTRAINT zahtevana_klasa_na_stazi_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ON DELETE CASCADE;
+ALTER TABLE ZAHTEVA_KLASU ADD CONSTRAINT zahtevana_klasa_FK FOREIGN KEY(naziv_klase) REFERENCES klasa(naziv) ON DELETE CASCADE;
 
 
 ----------------------------------
 --CONTRAINTS FOR TABLE MOZE_KORISTITI_RASE
 ----------------------------------
-ALTER TABLE MOZE_KORISTITI_RASE ADD CONSTRAINT koristi_opremu_FK FOREIGN KEY(id_opreme) REFERENCES oprema(id) ENABLE;
-ALTER TABLE MOZE_KORISTITI_RASE ADD CONSTRAINT rasa_koristi_FK FOREIGN KEY(naziv_rase) REFERENCES rasa(naziv) ENABLE;
+ALTER TABLE MOZE_KORISTITI_RASE ADD CONSTRAINT koristi_opremu_FK FOREIGN KEY(id_opreme) REFERENCES oprema(id) ON DELETE CASCADE;
+ALTER TABLE MOZE_KORISTITI_RASE ADD CONSTRAINT rasa_koristi_FK FOREIGN KEY(naziv_rase) REFERENCES rasa(naziv) ON DELETE CASCADE;
 
 ----------------------------------
 --CONTRAINTS FOR TABLE MOZE_KORISTITI_KLASE
 ----------------------------------
-ALTER TABLE MOZE_KORISTITI_KLASE ADD CONSTRAINT koristi_opremu_klasa_FK FOREIGN KEY(id_opreme) REFERENCES oprema(id) ENABLE;
-ALTER TABLE MOZE_KORISTITI_KLASE ADD CONSTRAINT klasa_koristi_FK FOREIGN KEY(naziv_klase) REFERENCES klasa(naziv) ENABLE;
+ALTER TABLE MOZE_KORISTITI_KLASE ADD CONSTRAINT koristi_opremu_klasa_FK FOREIGN KEY(id_opreme) REFERENCES oprema(id) ON DELETE CASCADE;
+ALTER TABLE MOZE_KORISTITI_KLASE ADD CONSTRAINT klasa_koristi_FK FOREIGN KEY(naziv_klase) REFERENCES klasa(naziv) ON DELETE CASCADE;
 
 ----------------------------------------
 --CONTRAINTS FOR TABLE MOZE_ISKORISTITI
 ----------------------------------------
-ALTER TABLE MOZE_ISKORISTITI ADD CONSTRAINT iskoristi_predmet_FK FOREIGN KEY(id_predmeta) REFERENCES predmet(id) ENABLE;
-ALTER TABLE MOZE_ISKORISTITI ADD CONSTRAINT rasa_iskoristi_FK FOREIGN KEY(naziv_rase) REFERENCES rasa(naziv) ENABLE;
+ALTER TABLE MOZE_ISKORISTITI ADD CONSTRAINT iskoristi_predmet_FK FOREIGN KEY(id_predmeta) REFERENCES predmet(id) ON DELETE CASCADE;
+ALTER TABLE MOZE_ISKORISTITI ADD CONSTRAINT rasa_iskoristi_FK FOREIGN KEY(naziv_rase) REFERENCES rasa(naziv) ON DELETE CASCADE;
 
 ----------------------------------------
 --CONTRAINTS FOR TABLE KORISTI
 ----------------------------------------
-ALTER TABLE koristi ADD CONSTRAINT koristi_igrac_FK FOREIGN KEY(id_igraca) REFERENCES igrac(id) ENABLE;
-ALTER TABLE koristi ADD CONSTRAINT predmet_koristi_FK FOREIGN KEY(id_kljucnog_predmeta) REFERENCES predmet(id) ENABLE;
+ALTER TABLE koristi ADD CONSTRAINT koristi_igrac_FK FOREIGN KEY(id_igraca) REFERENCES igrac(id) ON DELETE CASCADE;
+ALTER TABLE koristi ADD CONSTRAINT predmet_koristi_FK FOREIGN KEY(id_kljucnog_predmeta) REFERENCES predmet(id) ON DELETE CASCADE;
 
 ----------------------------------------
 --CONTRAINTS FOR TABLE KLJUCNI_ZA
 ----------------------------------------
-ALTER TABLE kljucni_za ADD CONSTRAINT kljucan_za_stazu_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ENABLE;
-ALTER TABLE kljucni_za ADD CONSTRAINT predmet_kljucni_za_FK FOREIGN KEY(id_kljucnog_predmeta) REFERENCES predmet(id) ENABLE;
+ALTER TABLE kljucni_za ADD CONSTRAINT kljucan_za_stazu_FK FOREIGN KEY(naziv_staze) REFERENCES staza(naziv) ON DELETE CASCADE;
+ALTER TABLE kljucni_za ADD CONSTRAINT predmet_kljucni_za_FK FOREIGN KEY(id_kljucnog_predmeta) REFERENCES predmet(id) ON DELETE CASCADE;
 
 ----------------------------------------
 --CONTRAINTS FOR TABLE CAROBNJAK_MAGIJE
 ----------------------------------------
-ALTER TABLE carobnjak_magije ADD CONSTRAINT carobnjak_FK FOREIGN KEY(id_carobnjaka) REFERENCES klasa(naziv) ENABLE;
+ALTER TABLE carobnjak_magije ADD CONSTRAINT carobnjak_FK FOREIGN KEY(id_carobnjaka) REFERENCES klasa(naziv) ON DELETE CASCADE;
 
 -------------------------------------------
 --CONTRAINTS FOR TABLE SVESTENIK_BLAGOSLOV
 -------------------------------------------
-ALTER TABLE svestenik_blagoslov ADD CONSTRAINT svestenik_FK FOREIGN KEY(id_svestenika) REFERENCES klasa(naziv) ENABLE;
+ALTER TABLE svestenik_blagoslov ADD CONSTRAINT svestenik_FK FOREIGN KEY(id_svestenika) REFERENCES klasa(naziv) ON DELETE CASCADE;
 
 
 
@@ -599,6 +599,9 @@ END;
 /
 ALTER TRIGGER "IGRAO_PK" ENABLE;
 
+
+
+
 ----------------------------------------------------
 -- 1. RASA
 ----------------------------------------------------
@@ -678,25 +681,27 @@ INSERT INTO borba (vreme_borbe, pobednik, bonus_poeni) VALUES (TO_DATE('2024-07-
 
 
 -- =========================================================
--- 8. lik (triger puni ID)
--- =========================================================
-REM INSERTING INTO lik
-SET DEFINE OFF;
-INSERT INTO lik ( stepen_zamora, iskustvo, kolicina_zlata, nivo_zdravstvenog_stanja, naziv_rase, naziv_klase) values (50,150,170,100,'Vilenjak','Oklopnik');
-INSERT INTO lik ( stepen_zamora, iskustvo, kolicina_zlata, nivo_zdravstvenog_stanja, naziv_rase, naziv_klase) values (40,170,200,200,'Patuljak','Carobnjak');
-INSERT INTO lik ( stepen_zamora, iskustvo, kolicina_zlata, nivo_zdravstvenog_stanja, naziv_rase, naziv_klase) values (30,100,120,80,'Ork','Lopov');
-INSERT INTO lik ( stepen_zamora, iskustvo, kolicina_zlata, nivo_zdravstvenog_stanja, naziv_rase, naziv_klase) values (20,300,250,300,'Covek','Svestenik');
-
-
--- =========================================================
--- 9. IGRAC
+-- 8. IGRAC
 -- =========================================================
 REM INSERTING into IGRAC
 SET DEFINE OFF;
-INSERT INTO IGRAC (ime, prezime, pol, nadimak, lozinka, uzrast, naziv_tima, id_lika) VALUES ('Stefan', 'Petkovic', 'M', 'stefy', 'stefy123', 25, 'SILA', 100000);
-INSERT INTO IGRAC (ime, prezime, pol, nadimak, lozinka, uzrast, naziv_tima, id_lika) VALUES ('Anastasija', 'Popovic', 'Z', 'asija', 'asija456', 21, 'SILA', 100001);
-INSERT INTO IGRAC (ime, prezime, pol, nadimak, lozinka, uzrast, naziv_tima, id_lika) VALUES ('Lazar', 'Markovic', 'M', 'laza', 'laza789', 24, 'SILA', 100002);
-INSERT INTO IGRAC (ime, prezime, pol, nadimak, lozinka, uzrast, naziv_tima, id_lika) values ('Ivana','Rajkovic','Z', 'rivana','rivana246',22,'SILA', 100003);
+INSERT INTO IGRAC (ime, prezime, pol, nadimak, lozinka, uzrast, naziv_tima) VALUES ('Stefan', 'Petkovic', 'M', 'stefy', 'stefy123', 25, 'SILA');
+INSERT INTO IGRAC (ime, prezime, pol, nadimak, lozinka, uzrast, naziv_tima) VALUES ('Anastasija', 'Popovic', 'Z', 'asija', 'asija456', 21, 'SILA');
+INSERT INTO IGRAC (ime, prezime, pol, nadimak, lozinka, uzrast, naziv_tima) VALUES ('Lazar', 'Markovic', 'M', 'laza', 'laza789', 24, 'SILA');
+INSERT INTO IGRAC (ime, prezime, pol, nadimak, lozinka, uzrast, naziv_tima) values ('Ivana','Rajkovic','Z', 'rivana','rivana246',22,'SILA');
+
+
+-- =========================================================
+-- 9. lik (triger puni ID)
+-- =========================================================
+REM INSERTING INTO lik
+SET DEFINE OFF;
+INSERT INTO lik ( stepen_zamora, iskustvo, kolicina_zlata, nivo_zdravstvenog_stanja, naziv_rase, naziv_klase, id_igraca) values (50,150,170,100,'Vilenjak','Oklopnik', 100000);
+INSERT INTO lik ( stepen_zamora, iskustvo, kolicina_zlata, nivo_zdravstvenog_stanja, naziv_rase, naziv_klase, id_igraca) values (40,170,200,200,'Patuljak','Carobnjak', 100001);
+INSERT INTO lik ( stepen_zamora, iskustvo, kolicina_zlata, nivo_zdravstvenog_stanja, naziv_rase, naziv_klase, id_igraca) values (30,100,120,80,'Ork','Lopov', 100002);
+INSERT INTO lik ( stepen_zamora, iskustvo, kolicina_zlata, nivo_zdravstvenog_stanja, naziv_rase, naziv_klase, id_igraca) values (20,300,250,300,'Covek','Svestenik', 100003);
+
+
 
 
 
@@ -728,6 +733,8 @@ INSERT INTO SESIJA (xp_poeni, kolicina_zlato, vreme_pocetka, vreme_trajanja, id_
 REM INSERTING into CAROBNJAK_MAGIJE
 SET DEFINE OFF;
 INSERT INTO carobnjak_magije (id_carobnjaka, magija) VALUES ('Carobnjak', 'Vatra');
+INSERT INTO carobnjak_magije (id_carobnjaka, magija) VALUES ('Carobnjak', 'Voda');
+INSERT INTO carobnjak_magije (id_carobnjaka, magija) VALUES ('Carobnjak', 'Hipnoza');
 
 -- =========================================================
 -- 13. SVESTENIK_BLAGOSLOV
@@ -736,6 +743,7 @@ INSERT INTO carobnjak_magije (id_carobnjaka, magija) VALUES ('Carobnjak', 'Vatra
 REM INSERTING into SVESTENIK_BLAGOSLOV
 SET DEFINE OFF;
 INSERT INTO svestenik_blagoslov (id_svestenika, tip_blagoslova) VALUES ('Svestenik', 'Snaga');
+INSERT INTO svestenik_blagoslov (id_svestenika, tip_blagoslova) VALUES ('Svestenik', 'Zivot');
 
 
 -- =========================================================

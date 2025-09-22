@@ -37,14 +37,14 @@ namespace MMORPG
         public string Lozinka;
         public string Ime;
         public string Prezime;
-        public char Pol;
+        public char? Pol;
         public int? Uzrast;
         public Tim Tim;
-        public Lik Lik;
         public virtual IList<Pomocnik> Pomocnici { get; set; } // 1:N
         public virtual IList<Sesija> Sesije { get; set; }    // 1:N
         public virtual IList<Predmet> KljučniPredmeti { get; set; }  // N:M
         public virtual IList<Oprema> Opreme { get; set; }  // N:M
+        public virtual IList<Lik> Likovi { get; set; } // 1:N
 
         public virtual IList<Igrao> IgraoStaze { get; set; }
 
@@ -56,9 +56,10 @@ namespace MMORPG
             KljučniPredmeti = new List<Predmet>();
             Opreme = new List<Oprema>();
             IgraoStaze = new List<Igrao>();
+            Likovi = new List<Lik>();
         }
         public IgracBasic(int id, string ime, string prezime, string nadimak, 
-            string lozinka, char pol, int? uzrast, Tim tim, Lik lik)
+            string lozinka, char? pol, int? uzrast, Tim tim)
         {
             this.Id = id;
             this.Nadimak = nadimak;
@@ -68,7 +69,6 @@ namespace MMORPG
             this.Pol = pol;
             this.Uzrast = uzrast;
             this.Tim = tim;
-            this.Lik = lik;
         }
     }
 
@@ -178,8 +178,6 @@ namespace MMORPG
         public Rasa NazivRase;
         public Klasa NazivKlase;
 
-        public PomocnikPregled()
-        { }
         public PomocnikPregled( int id, Igrac igrac, string ime, int bonus, Rasa rasa, Klasa klasa)
         {
             this.Id = id;
@@ -201,7 +199,6 @@ namespace MMORPG
         public Rasa NazivRase;
         public Klasa NazivKlase;
 
-        public PomocnikBasic() {}
 
         public PomocnikBasic(int id, string ime, int bonus,
             Igrac igrac, Rasa nazivRase, Klasa nazivKlase)
@@ -224,8 +221,7 @@ namespace MMORPG
         public string Naziv;
         public bool TipStaze;
         public int? BonusPoeni;
-
-        public StazaPregled() { }
+        
         public StazaPregled(string naziv, bool tipStaze, int? bonusPoeni)
         {
             this.Naziv = naziv;
@@ -338,11 +334,13 @@ namespace MMORPG
         public int NivoZdravstvenogStanja;
         public Rasa Rasa;
         public Klasa Klasa;
+        public Igrac Igrac;
 
         public LikPregled() { }
+
         public LikPregled(int id, int stepenZamora, int iskustvo, 
             int kolicinaZlata, int nivoZdravstvenogStanja,
-            Rasa rasa, Klasa klasa)
+            Rasa rasa, Klasa klasa, Igrac igrac)
         {
             this.ID = id;
             this.StepenZamora = stepenZamora;
@@ -351,6 +349,7 @@ namespace MMORPG
             this.NivoZdravstvenogStanja = nivoZdravstvenogStanja;
             this.Rasa = rasa;
             this.Klasa = klasa;
+            this.Igrac = igrac;
         }
     }
 
@@ -363,14 +362,12 @@ namespace MMORPG
         public int NivoZdravstvenogStanja;
         public RasaPregled Rasa;
         public KlasaPregled Klasa;
-        public virtual IList<Igrac> Igraci { get; set; }
-        public LikBasic()
-        {
-            Igraci = new List<Igrac>();
-        }
+        public IgracBasic Igrac;
+
+        public LikBasic() { }
 
         public LikBasic(int id, int kolicinaZlata, int iskustvo, 
-            int stepenZ, int nivoZS, RasaPregled rasa, KlasaPregled klasa)
+            int stepenZ, int nivoZS, RasaPregled rasa, KlasaPregled klasa, IgracBasic igrac)
         {
             this.Id = id;
             this.KolicinaZlata = kolicinaZlata;
@@ -379,6 +376,7 @@ namespace MMORPG
             this.NivoZdravstvenogStanja = nivoZS;
             this.Rasa = rasa;
             this.Klasa = klasa;
+            this.Igrac = igrac;
         }
     }
 

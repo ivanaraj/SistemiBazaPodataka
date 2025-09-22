@@ -19,40 +19,39 @@ namespace MMORPG.Mapiranje
 
             // Veza ka Tim  N:1
             References(x => x.Tim).Column("naziv_tima").LazyLoad();
-            // Veza ka Lik  N:1
-            References(x => x.Lik).Column("id_lika").LazyLoad();
+
+            HasMany(x => x.Likovi)
+                .KeyColumn("id_lika")
+                .Inverse()
+                .Cascade.All()
+                .LazyLoad();
 
             HasMany(x => x.Pomocnici)
                 .KeyColumn("id_igraca")
                 .Inverse()
-                .Cascade.AllDeleteOrphan()
-                .LazyLoad();
+                .Cascade.All();
 
             HasMany(x => x.Sesije)
                 .KeyColumn("id_igraca")
-                .Cascade.AllDeleteOrphan()
-                .Inverse()
-                .LazyLoad();
+                .Cascade.All()
+                .Inverse();
 
             HasMany(x => x.IgraoStaze)
                 .KeyColumn("id_igraca")
                 .Inverse()
-                .Cascade.AllDeleteOrphan()
-                .LazyLoad();
+                .Cascade.All();
 
             HasManyToMany(x => x.KljučniPredmeti)
                 .Table("koristi")
                 .ParentKeyColumn("id_igraca")
                 .ChildKeyColumn("id_kljucnog_predmeta")
-                .Cascade.AllDeleteOrphan()
-                .LazyLoad(); // igrac je vlasnik veze
+                .Cascade.All(); // igrac je vlasnik veze
 
             HasManyToMany(x => x.Opreme)
                 .Table("kupio")
                 .ParentKeyColumn("id_igraca")
                 .ChildKeyColumn("id_opreme")
-                .Cascade.AllDeleteOrphan()
-                .LazyLoad(); // igrac je vlasnik veze
+                .Cascade.All(); // igrac je vlasnik veze
         }
     }
 }

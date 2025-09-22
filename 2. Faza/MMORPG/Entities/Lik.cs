@@ -16,12 +16,8 @@ namespace MMORPG.Entities
 
         public virtual Rasa Rasa { get; set; }   // FK naziv_rase
         public virtual Klasa Klasa { get; set; } // FK naziv_klase
+        public virtual Igrac Igrac { get; set; } // FK id_igraca
 
-        public virtual IList<Igrac> Igraci { get; set; }
-        public Lik()
-        {
-            Igraci = new List<Igrac>(); // 1:N
-        }
 
     }
 }

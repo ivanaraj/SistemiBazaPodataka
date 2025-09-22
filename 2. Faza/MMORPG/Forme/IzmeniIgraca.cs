@@ -38,10 +38,17 @@ namespace MMORPG.Forme
         {
             try
             {
-                IgracBasic noviIgrac = NapuniIgracIzForme();
+                // dodao sam samo da prima string nadimak i tjt
+                //IgracBasic noviIgrac = NapuniIgracIzForme();
+                char pol = (radioButtonM.Checked ? 'M' : 'Z');
                 string nazivTima = comboBoxTim.SelectedItem.ToString();
                 int idLika = int.Parse(comboBoxLik.SelectedItem.ToString());
-                DTOManager.azurirajIgraca(noviIgrac, nazivTima, idLika);
+                DTOManager.azurirajIgraca(
+                    idLika, i.Id, nazivTima,
+                    textBoxIme.Text, textBoxPrezime.Text, textBoxLozinka.Text, textBoxNadimak.Text,
+                    pol,
+                    (int)numUzrast.Value
+                );
 
                 MessageBox.Show("Uspesno izmenjen igrac!");
 

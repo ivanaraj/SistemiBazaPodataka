@@ -13,17 +13,17 @@ namespace MMORPG.Entities
         public virtual string Lozinka { get; set; }
         public virtual string Ime { get; set; }
         public virtual string Prezime { get; set; }
-        public virtual char Pol { get; set; }
+        public virtual char? Pol { get; set; }
         public virtual int? Uzrast { get; set; }
 
         public virtual Tim Tim { get; set; }        // FK naziv_tima
-        public virtual Lik Lik { get; set; }        // FK id_lika
 
 
         public virtual IList<Pomocnik> Pomocnici { get; set; } // 1:N
         public virtual IList<Sesija> Sesije { get; set; }    // 1:N
         public virtual IList<Predmet> KljučniPredmeti { get; set; }  // N:M
         public virtual IList<Oprema> Opreme { get; set; }  // N:M
+        public virtual IList<Lik> Likovi { get; set; } // 1:N
 
         public virtual IList<Igrao> IgraoStaze { get; set; }
 
@@ -35,6 +35,8 @@ namespace MMORPG.Entities
             Sesije = new List<Sesija>();
             KljučniPredmeti = new List<Predmet>();
             Opreme = new List<Oprema>();
+            IgraoStaze = new List<Igrao>();
+            Likovi = new List<Lik>();
         }
     }
 }

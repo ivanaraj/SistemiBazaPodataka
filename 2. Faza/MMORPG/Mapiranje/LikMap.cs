@@ -25,11 +25,9 @@ namespace MMORPG.Mapiranje
             References(x => x.Rasa, "naziv_rase").LazyLoad();
             // Veza ka Klasa  N:1
             References(x => x.Klasa, "naziv_klase").LazyLoad();
-
-            HasMany(x => x.Igraci)
-                .KeyColumn("id_lika")
-                .Inverse()
-                .Cascade.All();
+            // Veza ka Igrac  N:1
+            References(x => x.Igrac, "id_igraca").LazyLoad();
+        
         }
     }
 }

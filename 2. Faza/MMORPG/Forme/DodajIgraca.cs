@@ -28,8 +28,6 @@ namespace MMORPG.Forme
         {
             popuniPodacima();
             popuniComboboxTim();
-            popuniComboboxLik();
-
         }
 
         public void popuniPodacima()
@@ -60,18 +58,7 @@ namespace MMORPG.Forme
             }
         }
 
-        public void popuniComboboxLik()
-        {
-            comboBoxLik.Items.Clear();
-
-            List<LikPregled> pomLista = DTOManager.vratiSveLikove();
-
-            foreach (LikPregled l in pomLista)
-            {
-                comboBoxLik.Items.Add(l.ID);
-            }
-        }
-    
+           
     
         public IgracBasic NapuniIgracIzForme()
         {
@@ -107,8 +94,7 @@ namespace MMORPG.Forme
             {
                 IgracBasic noviIgrac = NapuniIgracIzForme();
                 string nazivTima = comboBoxTim.SelectedItem.ToString();
-                int idLika = int.Parse(comboBoxLik.SelectedItem.ToString());
-                DTOManager.sacuvajIgraca(noviIgrac, nazivTima, idLika);
+                DTOManager.sacuvajIgraca(noviIgrac, nazivTima);
 
                 MessageBox.Show("Uspesno dodat igrac!");
 
@@ -131,9 +117,9 @@ namespace MMORPG.Forme
                 }
 
                 int idIgraca = Int32.Parse(igraci.SelectedItems[0].SubItems[0].Text);
-                IgracBasic ob = DTOManager.vratiIgraca(idIgraca);
+                IgracBasic ib = DTOManager.vratiIgraca(idIgraca);
 
-                IzmeniIgraca forma = new IzmeniIgraca(ob);
+                IzmeniIgraca forma = new IzmeniIgraca(ib);
                 forma.ShowDialog();
 
                 popuniPodacima();
