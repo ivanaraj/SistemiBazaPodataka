@@ -177,6 +177,12 @@
     <Compile Include="Forme\DodajTim.Designer.cs">
       <DependentUpon>DodajTim.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajUcestvovaoUBorbi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajUcestvovaoUBorbi.Designer.cs">
+      <DependentUpon>DodajUcestvovaoUBorbi.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\IzmeniIgraca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -234,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajTim.resx">
       <DependentUpon>DodajTim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajUcestvovaoUBorbi.resx">
+      <DependentUpon>DodajUcestvovaoUBorbi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\IzmeniIgraca.resx">
       <DependentUpon>IzmeniIgraca.cs</DependentUpon>

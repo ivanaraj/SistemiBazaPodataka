@@ -42,8 +42,8 @@
             this.labBonusP = new System.Windows.Forms.Label();
             this.labPobednik = new System.Windows.Forms.Label();
             this.labVremeBorbe = new System.Windows.Forms.Label();
-            this.btnDetaljiOBorbi = new System.Windows.Forms.Button();
             this.btnObrisiBorbu = new System.Windows.Forms.Button();
+            this.btnDetaljiOBorbi = new System.Windows.Forms.Button();
             this.groupBoxBorba.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numBonusP)).BeginInit();
             this.SuspendLayout();
@@ -60,7 +60,7 @@
             this.borbe.HideSelection = false;
             this.borbe.Location = new System.Drawing.Point(346, 12);
             this.borbe.Name = "borbe";
-            this.borbe.Size = new System.Drawing.Size(346, 219);
+            this.borbe.Size = new System.Drawing.Size(346, 229);
             this.borbe.TabIndex = 0;
             this.borbe.UseCompatibleStateImageBehavior = false;
             this.borbe.View = System.Windows.Forms.View.Details;
@@ -96,7 +96,7 @@
             this.groupBoxBorba.Controls.Add(this.labVremeBorbe);
             this.groupBoxBorba.Location = new System.Drawing.Point(12, 12);
             this.groupBoxBorba.Name = "groupBoxBorba";
-            this.groupBoxBorba.Size = new System.Drawing.Size(315, 219);
+            this.groupBoxBorba.Size = new System.Drawing.Size(315, 229);
             this.groupBoxBorba.TabIndex = 1;
             this.groupBoxBorba.TabStop = false;
             // 
@@ -140,7 +140,7 @@
             // labBonusP
             // 
             this.labBonusP.AutoSize = true;
-            this.labBonusP.Location = new System.Drawing.Point(6, 120);
+            this.labBonusP.Location = new System.Drawing.Point(6, 119);
             this.labBonusP.Name = "labBonusP";
             this.labBonusP.Size = new System.Drawing.Size(69, 13);
             this.labBonusP.TabIndex = 2;
@@ -149,7 +149,7 @@
             // labPobednik
             // 
             this.labPobednik.AutoSize = true;
-            this.labPobednik.Location = new System.Drawing.Point(6, 78);
+            this.labPobednik.Location = new System.Drawing.Point(6, 77);
             this.labPobednik.Name = "labPobednik";
             this.labPobednik.Size = new System.Drawing.Size(55, 13);
             this.labPobednik.TabIndex = 1;
@@ -164,19 +164,9 @@
             this.labVremeBorbe.TabIndex = 0;
             this.labVremeBorbe.Text = "Vreme borbe:";
             // 
-            // btnDetaljiOBorbi
-            // 
-            this.btnDetaljiOBorbi.Location = new System.Drawing.Point(346, 265);
-            this.btnDetaljiOBorbi.Name = "btnDetaljiOBorbi";
-            this.btnDetaljiOBorbi.Size = new System.Drawing.Size(153, 36);
-            this.btnDetaljiOBorbi.TabIndex = 9;
-            this.btnDetaljiOBorbi.Text = "Detalji o Borbi";
-            this.btnDetaljiOBorbi.UseVisualStyleBackColor = true;
-            this.btnDetaljiOBorbi.Click += new System.EventHandler(this.btnDetaljiOBorbi_Click);
-            // 
             // btnObrisiBorbu
             // 
-            this.btnObrisiBorbu.Location = new System.Drawing.Point(540, 265);
+            this.btnObrisiBorbu.Location = new System.Drawing.Point(540, 267);
             this.btnObrisiBorbu.Name = "btnObrisiBorbu";
             this.btnObrisiBorbu.Size = new System.Drawing.Size(152, 36);
             this.btnObrisiBorbu.TabIndex = 10;
@@ -184,11 +174,21 @@
             this.btnObrisiBorbu.UseVisualStyleBackColor = true;
             this.btnObrisiBorbu.Click += new System.EventHandler(this.btnObrisiBorbu_Click);
             // 
+            // btnDetaljiOBorbi
+            // 
+            this.btnDetaljiOBorbi.Location = new System.Drawing.Point(346, 267);
+            this.btnDetaljiOBorbi.Name = "btnDetaljiOBorbi";
+            this.btnDetaljiOBorbi.Size = new System.Drawing.Size(152, 36);
+            this.btnDetaljiOBorbi.TabIndex = 11;
+            this.btnDetaljiOBorbi.Text = "Detalji o Borbi";
+            this.btnDetaljiOBorbi.UseVisualStyleBackColor = true;
+            this.btnDetaljiOBorbi.Click += new System.EventHandler(this.btnDetaljiOBorbi_Click);
+            // 
             // DodajBorbu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 332);
+            this.ClientSize = new System.Drawing.Size(719, 360);
             this.Controls.Add(this.btnDetaljiOBorbi);
             this.Controls.Add(this.btnObrisiBorbu);
             this.Controls.Add(this.groupBoxBorba);
@@ -219,7 +219,7 @@
         private System.Windows.Forms.ColumnHeader columnHeaderPobednik;
         private System.Windows.Forms.ColumnHeader columnHeaderBonusP;
         private System.Windows.Forms.Button btnDodajBorbu;
-        private System.Windows.Forms.Button btnDetaljiOBorbi;
         private System.Windows.Forms.Button btnObrisiBorbu;
+        private System.Windows.Forms.Button btnDetaljiOBorbi;
     }
 }

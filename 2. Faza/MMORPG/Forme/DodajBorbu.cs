@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MMORPG.Entities;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -53,6 +54,7 @@ namespace MMORPG.Forme
             }
         }
 
+
         public BorbaBasic NapuniBorbaIzForme()
         {
             BorbaBasic bb = new BorbaBasic();
@@ -90,11 +92,7 @@ namespace MMORPG.Forme
             }
         }
 
-        private void btnDetaljiOBorbi_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void btnObrisiBorbu_Click(object sender, EventArgs e)
         {
             ListViewItem item = borbe.SelectedItems[0];
@@ -111,6 +109,30 @@ namespace MMORPG.Forme
 
                 popuniPodacima();
             }
+        }
+
+        private void btnDetaljiOBorbi_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (borbe.SelectedItems.Count == 0)
+                {
+                    MessageBox.Show("Morate izabrati borbu cije detalje zelite da vidite!");
+                    return;
+                }
+
+                int idBorbe = Int32.Parse(borbe.SelectedItems[0].SubItems[0].Text);
+                BorbaBasic b = DTOManager.vratiBorbu(idBorbe);
+
+                DodajUcestvovaoUBorbi forma = new DodajUcestvovaoUBorbi(b);
+                forma.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+            }
+
         }
     }
 }

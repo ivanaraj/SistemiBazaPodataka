@@ -12,7 +12,7 @@ namespace MMORPG.Mapiranje
             Id(x => x.Id, "id").GeneratedBy.TriggerIdentity(); // number(6,0)
 
             Map(x => x.XpPoeni, "xp_poeni");
-            Map(x => x.KolicinaZlata, "kolicina_zlata");
+            Map(x => x.KolicinaZlata, "kolicina_zlato");
             Map(x => x.VremePocetka, "vreme_pocetka");
             Map(x => x.VremeTrajanja, "vreme_trajanja");
 
