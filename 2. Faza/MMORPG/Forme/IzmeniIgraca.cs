@@ -13,24 +13,25 @@ namespace MMORPG.Forme
     public partial class IzmeniIgraca : Form
     {
         public IgracBasic i;
+        public string nazivTima;
 
         public IzmeniIgraca()
         {
             InitializeComponent();
-
             ThemeManager.ApplyTheme(this);
         }
 
-        public IzmeniIgraca(IgracBasic igrac)
+        public IzmeniIgraca(IgracBasic igrac, string tim)
         {
             InitializeComponent();
             ThemeManager.ApplyTheme(this);
+
             this.i = igrac;
+            this.nazivTima = tim;
         }
 
         private void IzmeniIgraca_Load(object sender, EventArgs e)
         {
-            popuniComboboxLik();
             popuniComboboxTim();
         }
 
@@ -38,13 +39,9 @@ namespace MMORPG.Forme
         {
             try
             {
-                // dodao sam samo da prima string nadimak i tjt
-                //IgracBasic noviIgrac = NapuniIgracIzForme();
                 char pol = (radioButtonM.Checked ? 'M' : 'Z');
-                string nazivTima = comboBoxTim.SelectedItem.ToString();
-                int idLika = int.Parse(comboBoxLik.SelectedItem.ToString());
-                DTOManager.azurirajIgraca(
-                    idLika, i.Id, nazivTima,
+                string nTima = comboBoxTim.SelectedItem.ToString();
+                DTOManager.azurirajIgraca( i.Id, nTima,
                     textBoxIme.Text, textBoxPrezime.Text, textBoxLozinka.Text, textBoxNadimak.Text,
                     pol,
                     (int)numUzrast.Value
@@ -59,30 +56,6 @@ namespace MMORPG.Forme
             }
         }
 
-        public IgracBasic NapuniIgracIzForme()
-        {
-            IgracBasic igrac = this.i;
-
-            igrac.Nadimak = textBoxNadimak.Text;
-            igrac.Lozinka = textBoxLozinka.Text;
-            igrac.Ime = textBoxIme.Text;
-            igrac.Prezime = textBoxPrezime.Text;
-
-            if (radioButtonM.Checked)
-            {
-                igrac.Pol = 'M';
-            }
-            else if (radioButtonZ.Checked)
-            {
-                igrac.Pol = 'Z';
-            }
-
-            igrac.Uzrast = (int)numUzrast.Value;
-
-            return igrac;
-
-        }
-
 
         public void popuniComboboxTim()
         {
@@ -94,18 +67,12 @@ namespace MMORPG.Forme
             {
                 comboBoxTim.Items.Add(t.Naziv);
             }
-        }
 
-        public void popuniComboboxLik()
-        {
-            comboBoxLik.Items.Clear();
-
-            List<LikPregled> pomLista = DTOManager.vratiSveLikove();
-
-            foreach (LikPregled l in pomLista)
+            if (!string.IsNullOrEmpty(this.nazivTima))
             {
-                comboBoxLik.Items.Add(l.ID);
+                comboBoxTim.SelectedItem = this.nazivTima;
             }
         }
+
     }
 }

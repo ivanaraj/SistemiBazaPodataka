@@ -285,6 +285,7 @@
             this.btnDodajLika.TabIndex = 4;
             this.btnDodajLika.Text = "Dodaj Lika";
             this.btnDodajLika.UseVisualStyleBackColor = true;
+            this.btnDodajLika.Click += new System.EventHandler(this.btnDodajLika_Click);
             // 
             // btnDodajTim
             // 
@@ -294,6 +295,7 @@
             this.btnDodajTim.TabIndex = 5;
             this.btnDodajTim.Text = "Dodaj Tim";
             this.btnDodajTim.UseVisualStyleBackColor = true;
+            this.btnDodajTim.Click += new System.EventHandler(this.btnDodajTim_Click);
             // 
             // btnDodajPomocnika
             // 
@@ -303,6 +305,7 @@
             this.btnDodajPomocnika.TabIndex = 6;
             this.btnDodajPomocnika.Text = "Dodaj Pomocnika";
             this.btnDodajPomocnika.UseVisualStyleBackColor = true;
+            this.btnDodajPomocnika.Click += new System.EventHandler(this.btnDodajPomocnika_Click);
             // 
             // brnDodajSesiju
             // 
@@ -312,6 +315,7 @@
             this.brnDodajSesiju.TabIndex = 7;
             this.brnDodajSesiju.Text = "Dodaj Sesiju";
             this.brnDodajSesiju.UseVisualStyleBackColor = true;
+            this.brnDodajSesiju.Click += new System.EventHandler(this.brnDodajSesiju_Click);
             // 
             // btnObrisiIgraca
             // 

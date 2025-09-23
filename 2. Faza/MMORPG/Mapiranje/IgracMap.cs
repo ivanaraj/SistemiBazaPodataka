@@ -21,15 +21,14 @@ namespace MMORPG.Mapiranje
             References(x => x.Tim).Column("naziv_tima").LazyLoad();
 
             HasMany(x => x.Likovi)
-                .KeyColumn("id_lika")
-                .Inverse()
+                .KeyColumn("id_igraca")
                 .Cascade.All()
-                .LazyLoad();
+                .Inverse();
 
             HasMany(x => x.Pomocnici)
                 .KeyColumn("id_igraca")
-                .Inverse()
-                .Cascade.All();
+                .Cascade.All()
+                .Inverse();
 
             HasMany(x => x.Sesije)
                 .KeyColumn("id_igraca")
@@ -38,8 +37,8 @@ namespace MMORPG.Mapiranje
 
             HasMany(x => x.IgraoStaze)
                 .KeyColumn("id_igraca")
-                .Inverse()
-                .Cascade.All();
+                .Cascade.All()
+                .Inverse();
 
             HasManyToMany(x => x.KljučniPredmeti)
                 .Table("koristi")

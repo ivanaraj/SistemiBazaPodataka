@@ -52,6 +52,7 @@
             this.btnStaze.TabIndex = 1;
             this.btnStaze.Text = "Staze";
             this.btnStaze.UseVisualStyleBackColor = true;
+            this.btnStaze.Click += new System.EventHandler(this.btnStaze_Click);
             // 
             // btnOprema
             // 

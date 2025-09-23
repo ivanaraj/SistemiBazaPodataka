@@ -125,7 +125,7 @@ namespace MMORPG.Forme
 
             foreach (IgracPregled i in sviIgraci)
             {
-                comboBoxIgrac.Items.Add(i.Nadimak);
+                comboBoxIgrac.Items.Add(i.Id);
             }
 
         }
@@ -328,7 +328,7 @@ namespace MMORPG.Forme
             if (comboBoxIgrac.SelectedItem != null)
             {
                 IgracBasic i = DTOManager.vratiIgraca(Int32.Parse(comboBoxIgrac.SelectedItem.ToString()));
-                lik.Igrac = new IgracBasic(i.Id, i.Ime, i.Prezime, i.Nadimak, i.Lozinka, i.Pol, i.Uzrast, i.Tim);
+                lik.Igrac = i;
             }
             else
             {
@@ -375,6 +375,13 @@ namespace MMORPG.Forme
             try
             {
                 LikBasic noviLik = NapuniLikIzForme();
+
+                if (noviLik == null)
+                {
+                    MessageBox.Show("Niste uneli sve podatke o liku!");
+                    return;
+                }
+
                 string nazivRase = comboBoxRasa.SelectedItem.ToString();
                 string nazivKlase = comboBoxKlasa.SelectedItem.ToString();
                 int idIgraca = Int32.Parse(comboBoxIgrac.SelectedItem.ToString());
@@ -499,6 +506,8 @@ namespace MMORPG.Forme
             if (result == DialogResult.Yes)
             {
                 DTOManager.obrisiLika(idLika);
+
+                MessageBox.Show("Uspešno obrisan lik!");
 
                 popuniPodacima();
             }

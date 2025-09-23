@@ -13,7 +13,7 @@ namespace MMORPG.Entities
         public virtual int MinIgraca { get; set; }
         public virtual int? BonusPoeni { get; set; }
 
-        // Opcionalno: kolekcija igraca ako želiš bidirekcionu vezu
+        
         public virtual IList<Igrac> Igraci { get; set; } // 1:N
         public virtual IList<Staza> Staze { get; set; } // N:M kroz igrao_tim
 

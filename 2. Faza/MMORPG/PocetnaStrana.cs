@@ -24,5 +24,11 @@ namespace MMORPG
             DodajIgraca forma = new DodajIgraca();
             forma.ShowDialog();
         }
+
+        private void btnStaze_Click(object sender, EventArgs e)
+        {
+            DodajStazu forma = new DodajStazu();
+            forma.ShowDialog();
+        }
     }
 }

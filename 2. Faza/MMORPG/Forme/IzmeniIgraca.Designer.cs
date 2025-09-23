@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IzmeniIgraca));
             this.groupBoxDodajIgraca = new System.Windows.Forms.GroupBox();
-            this.comboBoxLik = new System.Windows.Forms.ComboBox();
             this.comboBoxTim = new System.Windows.Forms.ComboBox();
             this.numUzrast = new System.Windows.Forms.NumericUpDown();
             this.radioButtonM = new System.Windows.Forms.RadioButton();
@@ -40,7 +39,6 @@
             this.textBoxIme = new System.Windows.Forms.TextBox();
             this.textBoxLozinka = new System.Windows.Forms.TextBox();
             this.textBoxNadimak = new System.Windows.Forms.TextBox();
-            this.labLik = new System.Windows.Forms.Label();
             this.labTim = new System.Windows.Forms.Label();
             this.labUzrast = new System.Windows.Forms.Label();
             this.labPol = new System.Windows.Forms.Label();
@@ -54,7 +52,6 @@
             // 
             // groupBoxDodajIgraca
             // 
-            this.groupBoxDodajIgraca.Controls.Add(this.comboBoxLik);
             this.groupBoxDodajIgraca.Controls.Add(this.comboBoxTim);
             this.groupBoxDodajIgraca.Controls.Add(this.numUzrast);
             this.groupBoxDodajIgraca.Controls.Add(this.radioButtonM);
@@ -64,7 +61,6 @@
             this.groupBoxDodajIgraca.Controls.Add(this.textBoxIme);
             this.groupBoxDodajIgraca.Controls.Add(this.textBoxLozinka);
             this.groupBoxDodajIgraca.Controls.Add(this.textBoxNadimak);
-            this.groupBoxDodajIgraca.Controls.Add(this.labLik);
             this.groupBoxDodajIgraca.Controls.Add(this.labTim);
             this.groupBoxDodajIgraca.Controls.Add(this.labUzrast);
             this.groupBoxDodajIgraca.Controls.Add(this.labPol);
@@ -78,25 +74,17 @@
             this.groupBoxDodajIgraca.TabIndex = 2;
             this.groupBoxDodajIgraca.TabStop = false;
             // 
-            // comboBoxLik
-            // 
-            this.comboBoxLik.FormattingEnabled = true;
-            this.comboBoxLik.Location = new System.Drawing.Point(101, 246);
-            this.comboBoxLik.Name = "comboBoxLik";
-            this.comboBoxLik.Size = new System.Drawing.Size(100, 21);
-            this.comboBoxLik.TabIndex = 17;
-            // 
             // comboBoxTim
             // 
             this.comboBoxTim.FormattingEnabled = true;
-            this.comboBoxTim.Location = new System.Drawing.Point(101, 210);
+            this.comboBoxTim.Location = new System.Drawing.Point(101, 241);
             this.comboBoxTim.Name = "comboBoxTim";
             this.comboBoxTim.Size = new System.Drawing.Size(100, 21);
             this.comboBoxTim.TabIndex = 16;
             // 
             // numUzrast
             // 
-            this.numUzrast.Location = new System.Drawing.Point(101, 179);
+            this.numUzrast.Location = new System.Drawing.Point(101, 201);
             this.numUzrast.Name = "numUzrast";
             this.numUzrast.Size = new System.Drawing.Size(100, 20);
             this.numUzrast.TabIndex = 15;
@@ -104,7 +92,7 @@
             // radioButtonM
             // 
             this.radioButtonM.AutoSize = true;
-            this.radioButtonM.Location = new System.Drawing.Point(150, 155);
+            this.radioButtonM.Location = new System.Drawing.Point(153, 159);
             this.radioButtonM.Name = "radioButtonM";
             this.radioButtonM.Size = new System.Drawing.Size(34, 17);
             this.radioButtonM.TabIndex = 14;
@@ -115,7 +103,7 @@
             // radioButtonZ
             // 
             this.radioButtonZ.AutoSize = true;
-            this.radioButtonZ.Location = new System.Drawing.Point(101, 155);
+            this.radioButtonZ.Location = new System.Drawing.Point(101, 159);
             this.radioButtonZ.Name = "radioButtonZ";
             this.radioButtonZ.Size = new System.Drawing.Size(32, 17);
             this.radioButtonZ.TabIndex = 13;
@@ -161,19 +149,10 @@
             this.textBoxNadimak.Size = new System.Drawing.Size(100, 20);
             this.textBoxNadimak.TabIndex = 9;
             // 
-            // labLik
-            // 
-            this.labLik.AutoSize = true;
-            this.labLik.Location = new System.Drawing.Point(6, 254);
-            this.labLik.Name = "labLik";
-            this.labLik.Size = new System.Drawing.Size(24, 13);
-            this.labLik.TabIndex = 8;
-            this.labLik.Text = "Lik:";
-            // 
             // labTim
             // 
             this.labTim.AutoSize = true;
-            this.labTim.Location = new System.Drawing.Point(6, 219);
+            this.labTim.Location = new System.Drawing.Point(6, 249);
             this.labTim.Name = "labTim";
             this.labTim.Size = new System.Drawing.Size(27, 13);
             this.labTim.TabIndex = 7;
@@ -182,7 +161,7 @@
             // labUzrast
             // 
             this.labUzrast.AutoSize = true;
-            this.labUzrast.Location = new System.Drawing.Point(6, 187);
+            this.labUzrast.Location = new System.Drawing.Point(6, 208);
             this.labUzrast.Name = "labUzrast";
             this.labUzrast.Size = new System.Drawing.Size(40, 13);
             this.labUzrast.TabIndex = 6;
@@ -191,7 +170,7 @@
             // labPol
             // 
             this.labPol.AutoSize = true;
-            this.labPol.Location = new System.Drawing.Point(6, 159);
+            this.labPol.Location = new System.Drawing.Point(6, 163);
             this.labPol.Name = "labPol";
             this.labPol.Size = new System.Drawing.Size(25, 13);
             this.labPol.TabIndex = 5;
@@ -253,7 +232,6 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBoxDodajIgraca;
-        private System.Windows.Forms.ComboBox comboBoxLik;
         private System.Windows.Forms.ComboBox comboBoxTim;
         private System.Windows.Forms.NumericUpDown numUzrast;
         private System.Windows.Forms.RadioButton radioButtonM;
@@ -263,7 +241,6 @@
         private System.Windows.Forms.TextBox textBoxIme;
         private System.Windows.Forms.TextBox textBoxLozinka;
         private System.Windows.Forms.TextBox textBoxNadimak;
-        private System.Windows.Forms.Label labLik;
         private System.Windows.Forms.Label labTim;
         private System.Windows.Forms.Label labUzrast;
         private System.Windows.Forms.Label labPol;

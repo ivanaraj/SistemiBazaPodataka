@@ -118,8 +118,9 @@ namespace MMORPG.Forme
 
                 int idIgraca = Int32.Parse(igraci.SelectedItems[0].SubItems[0].Text);
                 IgracBasic ib = DTOManager.vratiIgraca(idIgraca);
+                string nazivTima = ib.Tim.Naziv;
 
-                IzmeniIgraca forma = new IzmeniIgraca(ib);
+                IzmeniIgraca forma = new IzmeniIgraca(ib, nazivTima);
                 forma.ShowDialog();
 
                 popuniPodacima();
@@ -148,6 +149,30 @@ namespace MMORPG.Forme
 
                 popuniPodacima();
             }
+        }
+
+        private void btnDodajLika_Click(object sender, EventArgs e)
+        {
+            DodajLika forma = new DodajLika();
+            forma.ShowDialog();
+        }
+
+        private void btnDodajTim_Click(object sender, EventArgs e)
+        {
+            DodajTim forma = new DodajTim();
+            forma.ShowDialog();
+        }
+
+        private void btnDodajPomocnika_Click(object sender, EventArgs e)
+        {
+            DodajPomocnika forma = new DodajPomocnika();
+            forma.ShowDialog();
+        }
+
+        private void brnDodajSesiju_Click(object sender, EventArgs e)
+        {
+            DodajSesiju forma = new DodajSesiju();
+            forma.ShowDialog();
         }
     }
 }

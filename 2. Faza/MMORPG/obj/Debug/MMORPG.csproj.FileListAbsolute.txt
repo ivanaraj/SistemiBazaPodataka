@@ -98,3 +98,9 @@ C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodat
 C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.PocetnaStrana.resources
 C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.Forme.DodajIgraca.resources
 C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.Forme.IzmeniIgraca.resources
+C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.Forme.DodajTim.resources
+C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.Forme.IzmeniTim.resources
+C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.Forme.DodajBorbu.resources
+C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.Forme.DodajPomocnika.resources
+C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.Forme.DodajSesiju.resources
+C:\Users\Ivana\Desktop\faxy\3\6. semestar\sistemi baza podataka\SistemiBazaPodataka\2. Faza\MMORPG\obj\Debug\MMORPG.Forme.DodajStazu.resources

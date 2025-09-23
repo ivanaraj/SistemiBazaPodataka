@@ -135,6 +135,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajBorbu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajBorbu.Designer.cs">
+      <DependentUpon>DodajBorbu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\DodajIgraca.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,11 +153,41 @@
     <Compile Include="Forme\DodajLika.Designer.cs">
       <DependentUpon>DodajLika.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DodajPomocnika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajPomocnika.Designer.cs">
+      <DependentUpon>DodajPomocnika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajSesiju.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajSesiju.Designer.cs">
+      <DependentUpon>DodajSesiju.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajStazu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajStazu.Designer.cs">
+      <DependentUpon>DodajStazu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\DodajTim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DodajTim.Designer.cs">
+      <DependentUpon>DodajTim.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forme\IzmeniIgraca.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forme\IzmeniIgraca.Designer.cs">
       <DependentUpon>IzmeniIgraca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\IzmeniTim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\IzmeniTim.Designer.cs">
+      <DependentUpon>IzmeniTim.cs</DependentUpon>
     </Compile>
     <Compile Include="Mapiranje\BorbaMap.cs" />
     <Compile Include="Mapiranje\IgracMap.cs" />
@@ -178,14 +214,32 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajBorbu.resx">
+      <DependentUpon>DodajBorbu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajIgraca.resx">
       <DependentUpon>DodajIgraca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forme\DodajLika.resx">
       <DependentUpon>DodajLika.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajPomocnika.resx">
+      <DependentUpon>DodajPomocnika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajSesiju.resx">
+      <DependentUpon>DodajSesiju.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajStazu.resx">
+      <DependentUpon>DodajStazu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DodajTim.resx">
+      <DependentUpon>DodajTim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forme\IzmeniIgraca.resx">
       <DependentUpon>IzmeniIgraca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\IzmeniTim.resx">
+      <DependentUpon>IzmeniTim.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PocetnaStrana.resx">
       <DependentUpon>PocetnaStrana.cs</DependentUpon>

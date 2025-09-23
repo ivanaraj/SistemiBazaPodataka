@@ -41,7 +41,7 @@
             // 
             this.cmdUcitavanjeIgraca.Location = new System.Drawing.Point(24, 28);
             this.cmdUcitavanjeIgraca.Name = "cmdUcitavanjeIgraca";
-            this.cmdUcitavanjeIgraca.Size = new System.Drawing.Size(214, 23);
+            this.cmdUcitavanjeIgraca.Size = new System.Drawing.Size(214, 25);
             this.cmdUcitavanjeIgraca.TabIndex = 0;
             this.cmdUcitavanjeIgraca.Text = "Ucitavanje Igraca";
             this.cmdUcitavanjeIgraca.UseVisualStyleBackColor = true;
@@ -51,7 +51,7 @@
             // 
             this.cmdDodavanjeIgraca.Location = new System.Drawing.Point(24, 57);
             this.cmdDodavanjeIgraca.Name = "cmdDodavanjeIgraca";
-            this.cmdDodavanjeIgraca.Size = new System.Drawing.Size(214, 23);
+            this.cmdDodavanjeIgraca.Size = new System.Drawing.Size(214, 25);
             this.cmdDodavanjeIgraca.TabIndex = 1;
             this.cmdDodavanjeIgraca.Text = "Dodavanje novog Igraca";
             this.cmdDodavanjeIgraca.UseVisualStyleBackColor = true;
@@ -61,7 +61,7 @@
             // 
             this.cmdManyToOne.Location = new System.Drawing.Point(24, 86);
             this.cmdManyToOne.Name = "cmdManyToOne";
-            this.cmdManyToOne.Size = new System.Drawing.Size(214, 23);
+            this.cmdManyToOne.Size = new System.Drawing.Size(214, 25);
             this.cmdManyToOne.TabIndex = 2;
             this.cmdManyToOne.Text = "Veza many-to-one";
             this.cmdManyToOne.UseVisualStyleBackColor = true;
@@ -71,7 +71,7 @@
             // 
             this.cmdOneToMany.Location = new System.Drawing.Point(24, 115);
             this.cmdOneToMany.Name = "cmdOneToMany";
-            this.cmdOneToMany.Size = new System.Drawing.Size(214, 23);
+            this.cmdOneToMany.Size = new System.Drawing.Size(214, 25);
             this.cmdOneToMany.TabIndex = 3;
             this.cmdOneToMany.Text = "Veza one-to-many";
             this.cmdOneToMany.UseVisualStyleBackColor = true;
@@ -81,7 +81,7 @@
             // 
             this.cmdDodavanjeTima.Location = new System.Drawing.Point(24, 145);
             this.cmdDodavanjeTima.Name = "cmdDodavanjeTima";
-            this.cmdDodavanjeTima.Size = new System.Drawing.Size(214, 23);
+            this.cmdDodavanjeTima.Size = new System.Drawing.Size(214, 25);
             this.cmdDodavanjeTima.TabIndex = 4;
             this.cmdDodavanjeTima.Text = "Dodavanje Tima";
             this.cmdDodavanjeTima.UseVisualStyleBackColor = true;
@@ -91,7 +91,7 @@
             // 
             this.cmdDodavanjeTimaNaStazi.Location = new System.Drawing.Point(24, 175);
             this.cmdDodavanjeTimaNaStazi.Name = "cmdDodavanjeTimaNaStazi";
-            this.cmdDodavanjeTimaNaStazi.Size = new System.Drawing.Size(214, 23);
+            this.cmdDodavanjeTimaNaStazi.Size = new System.Drawing.Size(214, 25);
             this.cmdDodavanjeTimaNaStazi.TabIndex = 5;
             this.cmdDodavanjeTimaNaStazi.Text = "Dodavanje Tima na Stazi";
             this.cmdDodavanjeTimaNaStazi.UseVisualStyleBackColor = true;
@@ -101,7 +101,7 @@
             // 
             this.cmdUcitavanjeIgracaNaStazi.Location = new System.Drawing.Point(24, 205);
             this.cmdUcitavanjeIgracaNaStazi.Name = "cmdUcitavanjeIgracaNaStazi";
-            this.cmdUcitavanjeIgracaNaStazi.Size = new System.Drawing.Size(214, 23);
+            this.cmdUcitavanjeIgracaNaStazi.Size = new System.Drawing.Size(214, 25);
             this.cmdUcitavanjeIgracaNaStazi.TabIndex = 6;
             this.cmdUcitavanjeIgracaNaStazi.Text = "Ucitavanje Staza na kojima je igrao Igrac";
             this.cmdUcitavanjeIgracaNaStazi.UseVisualStyleBackColor = true;
